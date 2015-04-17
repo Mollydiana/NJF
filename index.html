@@ -15,16 +15,12 @@
     <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
     <!-- CUSTOM STYLE CSS -->
     <link href="assets/css/style2.css" rel="stylesheet"/>
-    <link href="assets/css/style.css" rel="stylesheet"/>
     <link href="assets/css/owl.carousel.css" rel="stylesheet">
     <link href="assets/css/owl.theme.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
-
-    <!-- GOOGLE FONT -->
-<link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic|Open+Sans:400,300,600|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="navbar navbar-fixed-top">
+<div id="nav" class="navbar navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,13 +35,13 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="portfolio.html">Shop</a></li>
+                <li><a href="portfolio.html">Arrangements</a></li>
                 <li><a href="index.html">About Us</a></li>
                 <li><a href="services.html">Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li class="phone-number"><a href="callto:+4158643134"> <span
-                        style="margin-left:5px"><i class="glyphicon glyphicon-phone-alt "></i> (415) 864-3134  </span>
-                </a>
+                <!--<li class="phone-number"><a href="callto:+4158643134"> <span-->
+                <!--style="margin-left:5px"><i class="glyphicon glyphicon-phone-alt "></i> (415) 864-3134  </span>-->
+                <!--</a>-->
 
             </ul>
         </div>
@@ -57,13 +53,11 @@
 <section id="home" class="text-center">
 
     <div id="carousel-example" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example" data-slide-to="1"></li>
-            <li data-target="#carousel-example" data-slide-to="2"></li>
-        </ol>
+
         <div class="carousel-inner">
-            <div class="item active">
+             <a id="ps-next" class="ps-nav"> <img src="assets/img/arrow-right.png" alt="N E X T"> </a>
+
+            <div class="item active one">
 
                 <img src="assets/img/1.jpg" alt=""/>
 
@@ -71,22 +65,27 @@
                     <!--<h4 class="back-light">Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.</h4>-->
                 </div>
             </div>
-            <div class="item">
+            <div class="item two">
                 <img src="assets/img/2.jpg" alt=""/>
 
                 <div class="carousel-caption ">
                     <!--<h4 class="back-light">Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.</h4>-->
                 </div>
             </div>
-            <div class="item">
+            <div class="item three">
                 <img src="assets/img/3.jpg" alt=""/>
 
                 <div class="carousel-caption ">
                     <!--<h4 class="back-light">Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.</h4>-->
                 </div>
             </div>
-        </div>
 
+        </div>
+ <!--<ol class="carousel-indicators">-->
+            <!--<li data-target="#carousel-example" data-slide-to="0" class="active"></li>-->
+            <!--<li data-target="#carousel-example" data-slide-to="1"></li>-->
+            <!--<li data-target="#carousel-example" data-slide-to="2"></li>-->
+        <!--</ol>-->
 
     </div>
 
@@ -96,252 +95,404 @@
 
 <!-- Main component call to action -->
 <div class="morePost row featuredPostContainer style2 globalPaddingTop ">
-    <h3 class="section-title style2 text-center"><span>Buy Flowers</span></h3>
-    <div class="container">
-      <div class="row xsResponse">
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
+<h3 class="section-title style2 text-center"><span>Buy Flowers</span></h3>
 
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/30.jpg" alt="img" class="img-responsive"></a>
-              <div class="promotion"> <span class="new-product"> NEW</span> <span class="discount">15% OFF</span> </div>
+<div class="container">
+<div class="row xsResponse">
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+        data-placement="left">
+        <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
             </div>
-            <div class="description">
-              <h4><a href="product-details.html">aliquam erat volutpat</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> <span class="old-price">$75</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
-        </div>
-        <!--/.item-->
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
+            <a href="product-details.html"><img src="images/product/store-a1.jpg" alt="img" class="img-responsive"></a>
 
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/31.jpg" alt="img" class="img-responsive"></a>
-              <div class="promotion"> <span class="discount">15% OFF</span> </div>
+            <!--<div class="promotion"><span class="new-product"> NEW</span></div>-->
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html">Coco Chanel</a></h4>
+
+            <p>Fashion fades, only style remains the same - Coco Chanel. A simply elegant bouquet of pristine all white
+                blooms complimented with a chic black vase. </p>
+            <span class="size"></span></div>
+
+        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
             </div>
-            <div class="description">
-              <h4><a href="product-details.html">ullamcorper suscipit lobortis </a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
-        </div>
-        <!--/.item-->
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
+            <a href="product-details.html"><img src="images/product/store-a2.jpg" alt="img" class="img-responsive"></a>
 
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/34.jpg" alt="img" class="img-responsive"></a>
-              <div class="promotion"> <span class="new-product"> NEW</span> </div>
+            <div class="promotion"></div>
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html">The Royal Jewels</a></h4>
+
+            <p>Fit for any Queen. Inspired by rich gem tones and market&#8217;s most exquisite finds, this arrangement
+                showcases Phalaenopsis, Lady slipper and Vanda orchids, accompanied with bold merlot calla lilies.</p>
+            <span class="size"></span></div>
+
+        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
             </div>
-            <div class="description">
-              <h4><a href="product-details.html">demonstraverunt lectores </a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
-        </div>
-        <!--/.item-->
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
+            <a href="product-details.html"><img src="images/product/store-a3.jpg" alt="img" class="img-responsive"></a>
 
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/12.jpg" alt="img" class="img-responsive"></a> </div>
-            <div class="description">
-              <h4><a href="product-details.html">humanitatis per</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
+            <div class="promotion"><span class="new-product"> NEW</span></div>
         </div>
-        <!--/.item-->
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
+        <div class="description">
+            <h4><a href="product-details.html">Spring Morning</a></h4>
 
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/33.jpg" alt="img" class="img-responsive"></a> </div>
-            <div class="description">
-              <h4><a href="product-details.html">Eodem modo typi</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
-        </div>
-        <!--/.item-->
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
+            <p>Wake-up to Spring with all this seasons local faves! Hyacinth, tulips, lilacs, sweet-pea, daffodils, this
+                list goes on... </p>
+            <span class="size"></span></div>
 
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/10.jpg" alt="img" class="img-responsive"></a> </div>
-            <div class="description">
-              <h4><a href="product-details.html">sequitur mutationem </a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
-        </div>
-        <!--/.item-->
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
+        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
 
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/30.jpg" alt="img" class="img-responsive"></a> </div>
-            <div class="description">
-              <h4><a href="product-details.html">consuetudium lectorum.</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
-        </div>
-        <!--/.item-->
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
-
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/33.jpg" alt="img" class="img-responsive"></a> </div>
-            <div class="description">
-              <h4><a href="product-details.html">parum claram</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> <span class="old-price">$75</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
-        </div>
-        <!--/.item-->
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
-
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/13.jpg" alt="img" class="img-responsive"></a> </div>
-            <div class="description">
-              <h4><a href="product-details.html">duis dolore </a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
-        </div>
-        <!--/.item-->
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
-
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/21.jpg" alt="img" class="img-responsive"></a>
-              <div class="promotion"> <span class="new-product"> NEW</span> <span class="discount">15% OFF</span> </div>
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
             </div>
-            <div class="description">
-              <h4><a href="product-details.html">aliquam erat volutpat</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
+            <a href="product-details.html"><img src="images/product/store-b1.jpg" alt="img" class="img-responsive"></a>
         </div>
-        <!--/.item-->
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
+        <div class="description">
+            <h4><a href="product-details.html">Honey Bunny</a></h4>
 
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/27.jpg" alt="img" class="img-responsive"></a>
-              <div class="promotion"> <span class="discount">15% OFF</span> </div>
-            </div>
-            <div class="description">
-              <h4><a href="product-details.html">ullamcorper suscipit lobortis </a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
-        </div>
-        <!--/.item-->
-        <div class="item col-lg-3 col-md-3 col-sm-4 col-xs-6">
-          <div class="product">
-          <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist" data-placement="left">
-          <i class="glyphicon glyphicon-heart"></i>
-          </a>
+            <p>Fresh spring mix of the SF Flower Marts growers. Celebrate fresh, local seasonal blooms include lilacs
+                garden roses, tulips, daffodils, perfect for all Spring holidays! </p>
+            <span class="size"></span></div>
 
-            <div class="image">
-          <div class="quickview">
-              <a title="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal" data-toggle="modal"> Quick View </a>
-             </div><a href="product-details.html"><img src="images/product/17.jpg" alt="img" class="img-responsive"></a>
-              <div class="promotion"> <span class="new-product"> NEW</span> </div>
+        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
             </div>
-            <div class="description">
-              <h4><a href="product-details.html">demonstraverunt lectores </a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <span class="size">XL / XXL / S </span> </div>
-            <div class="price"> <span>$25</span> </div>
-            <div class="action-control"> <a class="btn btn-primary"> <span class="add2cart"><i class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a> </div>
-          </div>
+            <a href="product-details.html"><img src="images/product/store-b2.jpg" alt="img" class="img-responsive"></a>
         </div>
-        <!--/.item-->
-      </div>
-      <!-- /.row -->
-  </div>
+        <div class="description">
+            <h4><a href="product-details.html">Brandy Snaps</a></h4>
+
+            <p>A sophisticated arrangement pairing Cherry Brandy roses, hypercum berry, chartreuse hydrangea embellished
+                with variegated foliage. </p>
+            <span class="size"></span></div>
+          <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
+            </div>
+            <a href="product-details.html"><img src="images/product/store-b3.jpg" alt="img" class="img-responsive"></a>
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html"> Earthy Brights </a></h4>
+
+            <p>Simple and strong colors and textures perfectly packed together here. Kales, lilies, geraniums, callas,
+                stocks.</p>
+            <span class="size"></span></div>
+           <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
+            </div>
+            <a href="product-details.html"><img src="images/product/store-c1.jpg" alt="img" class="img-responsive"></a>
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html">Bold & Beautiful</a></h4>
+
+            <p>Color and texture are fused in this striking combination of vibrant hydrangea, Cymbidium orchids,
+                decorative kale and lush green Brunia & Brazilia, finished in a leaf wrapped glass vase.</p>
+            <span class="size"></span></div>
+        <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
+            </div>
+            <a href="product-details.html"><img src="images/product/store-c2.jpg" alt="img" class="img-responsive"></a>
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html">Textured Romance</a></h4>
+
+            <p>Local seasonal protea, cymbidium orchids create an exotic mix, accented with other farm fresh local
+                treats.</p>
+            <span class="size"></span></div>
+        <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
+            </div>
+            <a href="product-details.html"><img src="images/product/store-c3.jpg" alt="img" class="img-responsive"></a>
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html">Dream Team </a></h4>
+
+            <p>Tulips, hyacinth and blue thistle come together making the perfect team.</p>
+            <span class="size"></span></div>
+        <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal">View </a>
+            </div>
+            <a href="product-details.html"><img src="images/product/store-d1.jpg" alt="img" class="img-responsive"></a>
+
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html">Butterscotch</a></h4>
+
+            <p>Soothing yellows & creams calm the soul with perfect blend of roses, callas, kales, fiddlehead ferns &
+                craspedia.</p>
+            <span class="size"></span></div>
+        <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
+            </div>
+            <a href="product-details.html"><img src="images/product/store-d2.jpg" alt="img" class="img-responsive"></a>
+
+            <div class="promotion"></div>
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html">Spring Thing </a></h4>
+
+            <p>Lush fresh mix of local spring blooms, hyacinth, tulips, stock have fun with others.</p>
+            <span class="size"></span></div>
+        <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
+            </div>
+            <a href="product-details.html"><img src="images/product/store-d3.jpg" alt="img" class="img-responsive"></a>
+
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html">Green Goddess</a></h4>
+
+            <p>Go green, revitalize and rejuvenate with super fresh tasty all green arrangement.</p>
+            <span class="size"></span></div>
+        <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+</div>
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
+            </div>
+            <a href="product-details.html"><img src="images/product/store-e1.jpg" alt="img" class="img-responsive"></a>
+
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html">Tulip Trio</a></h4>
+
+            <p>Modern design here color blocking with tulips. Look inside the vase for a hidden treasure of
+                succulents.</p>
+            <span class="size"></span></div>
+        <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
+            </div>
+            <a href="product-details.html"><img src="images/product/store-e2.jpg" alt="img" class="img-responsive"></a>
+
+            <div class="promotion"></div>
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html"> Minty tulips </a></h4>
+
+            <p>Bold Red Tulips kissed with fresh organic mint.</p>
+            <span class="size"></span></div>
+        <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="product">
+        <a class="add-fav tooltipHere" data-toggle="tooltip" data-original-title="Add to Wishlist"
+           data-placement="left">
+            <i class="glyphicon glyphicon-heart"></i>
+        </a>
+
+        <div class="image">
+            <div class="quickview">
+                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                   data-toggle="modal"> View </a>
+            </div>
+            <a href="product-details.html"><img src="images/product/store-e3.jpg" alt="img" class="img-responsive"></a>
+
+        </div>
+        <div class="description">
+            <h4><a href="product-details.html">Nine Lives</a></h4>
+
+            <p>You can never have too many succulents and air-plants friends. </p>
+            <span class="size"></span></div>
+        <div class="action-control"><a class="btn btn-primary"> <span class="add2cart"><i
+                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+    </div>
+</div>
+<!--/.item-->
+
+</div>
+</div>
+<!-- /.row -->
+</div>
 <!-- Product Details Modal  -->
 <div class="modal fade" id="product-details-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -352,74 +503,77 @@
                 <!-- product Image -->
 
                 <div class="main-image  col-lg-12 no-padding style3 modal-image">
-                    <a class="product-largeimg-link" href="product-details.html"><img src="images/zoom/zoom1.jpg"
-                                                                                      class="img-responsive product-largeimg"
-                                                                                      alt="img">
+                    <a class="product-largeimg-link" href="product-details.html"><img
+                            src="images/product/store-j2-lg.jpg"
+                            class="img-responsive product-largeimg"
+                            alt="img">
                     </a>
                 </div>
                 <!--/.main-image-->
-                </div>
-                <!--/.modal-product-thumb-->
             </div>
-            <!--/ product Image-->
+            <!--/.modal-product-thumb-->
+        </div>
+        <!--/ product Image-->
 
 
-            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
-                <div class="modal-details-inner">
-                    <h1 class="product-title"> Title of Flower</h1>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Club Tropicana</h1>
 
-                    <div class="product-price"><span class="price-sales"> $70</span></div>
-                    <div class="details-description">
-                        <p>Details about product</p>
+                <div class="product-price"><span class="price-sales">$70 | $100 | $150</span></div>
+                <div class="details-description">
+                    <p>Take yourself back to that moment on the beach with this
+                        flourish of vibrant tropical blooms. This fresh take on
+                        an island favorite includes ginger,heliconia, antherium
+                        and dramatic tropical foliage.</p>
+                </div>
+
+                <!--/.color-details-->
+
+                <div class="productFilter productFilterLook2">
+                    <div class="filterBox">
+                        <select>
+                            <option value="strawberries" selected>Quantity</option>
+                            <option value="mango">1</option>
+                            <option value="bananas">2</option>
+                            <option value="watermelon">3</option>
+                            <option value="grapes">4</option>
+                            <option value="oranges">5</option>
+                            <option value="pineapple">6</option>
+                            <option value="peaches">7</option>
+                            <option value="cherries">8</option>
+                        </select>
                     </div>
-                    <!--/.color-details-->
-
-                    <div class="productFilter productFilterLook2">
-                        <div class="filterBox">
-                            <select>
-                                <option value="strawberries" selected>Quantity</option>
-                                <option value="mango">1</option>
-                                <option value="bananas">2</option>
-                                <option value="watermelon">3</option>
-                                <option value="grapes">4</option>
-                                <option value="oranges">5</option>
-                                <option value="pineapple">6</option>
-                                <option value="peaches">7</option>
-                                <option value="cherries">8</option>
-                            </select>
-                        </div>
-                        <div class="filterBox">
-                            <select>
-                                <option value="strawberries" selected>Size</option>
-                                <option value="mango">XL</option>
-                                <option value="bananas">XXL</option>
-                                <option value="watermelon">M</option>
-                                <option value="apples">L</option>
-                                <option value="apples">S</option>
-                            </select>
-                        </div>
+                    <div class="filterBox">
+                        <select>
+                            <option value="strawberries" selected>Size</option>
+                            <option value="mango">L</option>
+                            <option value="watermelon">M</option>
+                            <option value="apples">S</option>
+                        </select>
                     </div>
-                    <!-- productFilter -->
+                </div>
+                <!-- productFilter -->
 
-                    <div class="cart-actions">
-                        <div class="addto">
-                            <button onclick="productAddToCartForm.submit(this);" class="button btn-cart cart first"
-                                    title="Add to Cart" type="button">Add to Cart
-                            </button>
-                            <!--<a class="link-wishlist wishlist">Add to Wishlist</a></div>-->
+                <div class="cart-actions">
+                    <div class="addto">
+                        <button onclick="productAddToCartForm.submit(this);" class="button btn-cart cart first"
+                                title="Add to Cart" type="button">Add to Cart
+                        </button>
+                        <!--<a class="link-wishlist wishlist">Add to Wishlist</a></div>-->
                     </div>
                     <!--/.cart-actions-->
-                <!--/.modal-details-inner-->
+                    <!--/.modal-details-inner-->
+                </div>
+                <!--/.modal-details-->
+                <div class="clear"></div>
             </div>
-            <!--/.modal-details-->
-            <div class="clear"></div>
+            <!--/.modal-content-->
         </div>
         <!--/.modal-content-->
     </div>
-    <!--/.modal-content-->
-</div>
-<!-- End Modal -->
-<!--/.productslider-->
+    <!-- End Modal -->
+    <!--/.productslider-->
 
 </div>
 <!--/.JUST-INTRO END-->
@@ -428,31 +582,20 @@
     <div class="container">
         <div class="row text-center pad-row">
             <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 ">
-                <i class="fa fa-quote-left fa-3x"></i>
-
-                <p>
-                    From traditional arrangements to creations that push preconceived boundaries. Whether young and
-                    funky, sophisticated, contemporary or traditional, our flowers come with passion and love.
+                <p class="quote">
+                    <i class="fa fa-quote-left fa-1x"></i>From traditional arrangements to creations that push preconceived boundaries. Whether young and
+                    funky, sophisticated, contemporary or traditional, our flowers come with passion and love.<i class="fa fa-quote-right fa-1x"></i>
 
                 </p>
+
+
             </div>
         </div>
     </div>
 
 </section>
 <!--/.NOTE END-->
-<section id="clients">
-
-
-    <div class="container">
-        <div class="row text-center pad-bottom">
-            <div class="col-md-12">
-                <img src="assets/img/clients.png" alt="" class="img-responsive"/>
-            </div>
-
-        </div>
-    </div>
-</section>
+<!---->
 <!--/.CLIENTS END-->
 <section id="footer-sec">
 
@@ -481,12 +624,13 @@
             <div class="col-md-4">
                 <h4><strong>OUR LOCATION</strong></h4>
                 <address>
-                    4109 18th Street, <br>
+                    4109 18th Street,
                     San Francisco, <br>
-                    CA 94114
+                    CA 94114<br>
+                    (between Castro St. & Collingwood St.)
 
                 </address>
-                <a href="callto:+4158643134"> Give us a call! <i class="glyphicon glyphicon-phone-alt "></i></a>
+                <a href="callto:+4158643134"> <i class="glyphicon glyphicon-phone-alt "></i>  Give us a call!</a>
             </div>
         </div>
     </div>
@@ -497,7 +641,7 @@
 <script src="assets/plugins/jquery-1.10.2.js"></script>
 <!-- BOOTSTRAP SCRIPTS  -->
 <script src="assets/plugins/bootstrap.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="assets/js/njf.js"></script>
 <script>$('.carousel').carousel();</script>
 
 </div>
