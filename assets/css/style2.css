@@ -44,6 +44,8 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 /* google webfont */
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+/* google webfont */
+@import url(http://fonts.googleapis.com/css?family=Tangerine|Great+Vibes|Pinyon+Script);
 
 /* google webfont */
 
@@ -1538,9 +1540,8 @@ p {
     line-height: 1.1em;
     margin-right: -44px;
     margin-left: -36px;
-    font-size: 1.25em;
-    font-family: 'Shadows Into Light', cursive;
-}
+    font-size: 1.65em;
+font-family: 'Pinyon Script', cursive;}
 
 .swiper-container {
     width: 100%;
@@ -5565,7 +5566,7 @@ html, body {
 }
 
 .carousel .carousel-inner .bg1 {
-    background-image: url('../img/IMG_0015.jpg');
+    background-image: url('../img/1.jpg');
     background-position: center top;
 }
 

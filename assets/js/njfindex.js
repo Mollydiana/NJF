@@ -14,7 +14,7 @@ $(window).on('scroll',function(){
             $('.navbar-nav > li > a').css("color", "#262626");
         } else {
             $('#nav').removeClass('past-main');
-            $('.navbar-nav > li > a').css("color", "#262626");
+            $('.navbar-nav > li > a').css("color", "#fff");
         }
     }
 });
@@ -86,4 +86,5 @@ $(function() {
 //    var src = $(this).attr('data-src');
 //
 //    $(".main-image").attr({'src':src});
-//});
+//});/**
+
