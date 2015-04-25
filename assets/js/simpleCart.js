@@ -87,7 +87,7 @@
 
 				// default options
 				settings = {
-					checkout				: { type: "PayPal", email: "you@yours.com" },
+					checkout				: { type: "SendForm", email: "mollydiana@gmail.com" },
 					currency				: "USD",
 					language				: "english-us",
 
@@ -102,7 +102,7 @@
 						{ view: "remove", text: "Remove", label: false }
 					],
 
-					excludeFromCheckout	: ['thumb'],
+					excludeFromCheckout	: [],
 
 					shippingFlatRate		: 0,
 					shippingQuantityRate	: 0,

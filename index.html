@@ -18,7 +18,14 @@
     <link href="assets/css/owl.theme.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
     <link href="assets/css/style2.css" rel="stylesheet"/>
-
+<script>
+  simpleCart({
+    checkout: {
+      type: "PayPal",
+      email: "Mollydiana@gmail.com"
+    }
+  });
+</script>
 </head>
 <body>
 <div id="nav" class="navbar navbar-fixed-top">
@@ -36,14 +43,17 @@
 
         </div>
         <span class="phone-number"><a style="color: rgba(0, 0, 0, 0.6);" href="tel:+4158643134"> <span
-             style="margin-left:5px"><i class="glyphicon glyphicon-phone-alt "></i>(415) 864-3134 </span>
-               </a></span>
+                style="margin-left:5px"><i class="glyphicon glyphicon-phone-alt "></i>(415) 864-3134 </span>
+        </a></span>
+
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.html#buy-flowers">Buy Flowers</a></li>
                 <li><a href="#footer-sec">About Us</a></li>
                 <li><a href="index.html#contact-sec">Events</a></li>
                 <li><a href="index.html#contact-sec">Contact</a></li>
+                <li><a style="font-size: 1.2em" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+
 
 
             </ul>
@@ -55,34 +65,36 @@
 <!-- home carousel -->
 <span id="home">
 <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-<ol class="carousel-indicators">
-<li data-target="#carousel" data-slide-to="0" class="active"></li>
-<li data-target="#carousel" data-slide-to="1"></li>
-<li data-target="#carousel" data-slide-to="2"></li>
-</ol>
-<div class="carousel-inner">
-<div class="item bg bg1 active">
-<div class="container">
-<div class="carousel-caption">
-</div>
-</div>
-</div>
-<div class="item bg bg2">
-<div class="container">
-<div class="carousel-caption">
-</div>
-</div>
-</div>
-<div class="item bg bg3">
-<div class="container">
-<div class="carousel-caption">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item bg bg1 active">
+            <div class="container">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+        <div class="item bg bg2">
+            <div class="container">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+        <div class="item bg bg3">
+            <div class="container">
+                <div class="carousel-caption">
 
-</div>
-</div>
-</div>
-</div>
-<a class="left carousel-control" href="#buy-flowers" data-slide="prev"><p  id="arrow-left" ><img src="assets/img/arrow-left.png"><span class="arrow-title">BUY FLOWERS</span></p></a>
-<a class="right carousel-control" href="#carousel" data-slide="next"><p  id="arrow-right" ><span class="arrow-title">WEDDINGS & EVENTS</span><img src="assets/img/arrow-right.png"></p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#buy-flowers" data-slide="prev"><p id="arrow-left"><img
+            src="assets/img/arrow-left.png"><span class="arrow-title">BUY FLOWERS</span></p></a>
+    <a class="right carousel-control" href="#carousel" data-slide="next"><p id="arrow-right"><span class="arrow-title">WEDDINGS & EVENTS</span><img
+            src="assets/img/arrow-right.png"></p></a>
 </div>
 </span>
 <!-- carousel end -->
@@ -95,26 +107,42 @@
 <div class="container">
 <div class="row xsResponse">
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="index.html"><img src="images/product/store-a1.jpg" alt="img" class="img-responsive"></a>
+
+                <!--<div class="promotion"><span class="new-product"> NEW</span></div>-->
             </div>
-            <a href="index.html"><img src="images/product/store-a1.jpg" alt="img" class="img-responsive"></a>
+            <div class="description">
+                <h4 class="item_name">Coco Chanel</h4>
 
-            <!--<div class="promotion"><span class="new-product"> NEW</span></div>-->
+                <p>Fashion fades, only style remains the same - Coco Chanel. A simply elegant bouquet of pristine all
+                    white
+                    blooms complimented with a chic black vase. </p>
+                <span class="item_price">$85 | $100 | $120</span><br>
+                <label> size <select class="item_size">
+                    <option value="Small"> Small</option>
+                    <option value="Medium"> Medium</option>
+                    <option value="Large"> Large</option>
+                </select></label>
+                <label> quantity <select class="item_Quantity">
+                    <option value="1"> 1</option>
+                    <option value="2"> 2</option>
+                    <option value="3"> 3</option>
+                    <option value="4"> 4</option>
+                </select></label></div>
+
+
+
+            <div class="action-control"><a class="item_add" href="javascript:;"> <span
+                    class="button-fill grey add2cart"><i
+                    class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
         </div>
-        <div class="description">
-            <h4><a href="index.html">Coco Chanel</a></h4>
-
-            <p>Fashion fades, only style remains the same - Coco Chanel. A simply elegant bouquet of pristine all white
-                blooms complimented with a chic black vase. </p>
-            <span class="size"></span></div>
-
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
-
     </div>
 </div>
 <!--/.item-->
@@ -143,7 +171,7 @@
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
     <div class="product">
-      <div class="image">
+        <div class="image">
             <div class="quickview">
                 <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
                    data-toggle="modal"> View </a>
@@ -166,7 +194,7 @@
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
     <div class="product">
-   <div class="image">
+        <div class="image">
             <div class="quickview">
                 <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
                    data-toggle="modal"> View </a>
@@ -267,7 +295,7 @@
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
     <div class="product">
-       <div class="image">
+        <div class="image">
             <div class="quickview">
                 <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
                    data-toggle="modal"> View </a>
@@ -286,7 +314,7 @@
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
     <div class="product">
-       <div class="image">
+        <div class="image">
             <div class="quickview">
                 <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
                    data-toggle="modal">View </a>
@@ -307,7 +335,7 @@
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
     <div class="product">
-       <div class="image">
+        <div class="image">
             <div class="quickview">
                 <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
                    data-toggle="modal"> View </a>
@@ -348,7 +376,7 @@
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
     <div class="product">
-       <div class="image">
+        <div class="image">
             <div class="quickview">
                 <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
                    data-toggle="modal"> View </a>
@@ -369,7 +397,7 @@
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
     <div class="product">
-       <div class="image">
+        <div class="image">
             <div class="quickview">
                 <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
                    data-toggle="modal"> View </a>
@@ -415,6 +443,7 @@
 </div>
 </div>
 <!-- Product Details Modal  -->
+
 <div class="modal fade" id="product-details-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -426,9 +455,9 @@
                 <div class="main-image  col-lg-12 no-padding style3 modal-image">
                     <a class="product-largeimg-link" href="#">
                         <img
-                            src="images/product/store-j2-lg.jpg"
-                            class="img-responsive product-largeimg"
-                            alt="img">
+                                src="images/product/store-j2-lg.jpg"
+                                class="img-responsive product-largeimg"
+                                alt="img">
                     </a>
                 </div>
                 <!--/.main-image-->
@@ -439,6 +468,7 @@
 
 
         <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+
             <div class="modal-details-inner">
                 <h1 class="product-title">Coco Channel</h1>
 
@@ -478,15 +508,10 @@
                         <button onclick="productAddToCartForm.submit(this);" class="button btn-cart cart first"
                                 title="Add to Cart" type="button">Add to Cart
                         </button>
-                        <!--<a class="link-wishlist wishlist">Add to Wishlist</a></div>-->
                     </div>
-                    <!--/.cart-actions-->
-                    <!--/.modal-details-inner-->
                 </div>
-                <!--/.modal-details-->
                 <div class="clear"></div>
             </div>
-            <!--/.modal-content-->
         </div>
         <!--/.modal-content-->
     </div>
@@ -515,9 +540,10 @@
 
 </section>
 
-<section  id="contact-sec">
-       <iframe class="cnt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2486721990767!2d-122.43526299999999!3d37.760767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1b33299e05%3A0xf871a655029e3512!2sNot+Just+Flowers!5e0!3m2!1sen!2sus!4v1428616045412"></iframe>
-     </section>
+<section id="contact-sec">
+    <iframe class="cnt"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2486721990767!2d-122.43526299999999!3d37.760767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1b33299e05%3A0xf871a655029e3512!2sNot+Just+Flowers!5e0!3m2!1sen!2sus!4v1428616045412"></iframe>
+</section>
 
 <!--/.NOTE END-->
 <!---->
@@ -528,16 +554,22 @@
         <div class="row  pad-bottom">
             <div class="col-md-4 foot">
                 <h4><strong>ABOUT US</strong></h4>
-<div class="sidebar-box">
- <p>
-                    Renowned for supplying spectacular flowers throughout San Francisco and the Bay Area. Andrei and
-                    Lisa Krylov bring over fifteen years of experience to the Not Just Flowers Store and Design Studio.
-                    Not Just Flowers has built a strong reputation for consistently providing unique, perfectly tailored
-                    bouquets, utilizing the best seasonal fresh flowers and foliage. Have grown -up in England and
-                    Russia this husband and wife team have a strong European style, by mixing individual elements with a
-                    strong awareness of commercial and seasonal trends.
-                </p>  <p class="read-more"><a href="#" class="button" id="read-more-button">Read More</a></p>
-</div>
+
+                <div class="sidebar-box">
+                    <p>
+                        Renowned for supplying spectacular flowers throughout San Francisco and the Bay Area. Andrei and
+                        Lisa Krylov bring over fifteen years of experience to the Not Just Flowers Store and Design
+                        Studio.
+                        Not Just Flowers has built a strong reputation for consistently providing unique, perfectly
+                        tailored
+                        bouquets, utilizing the best seasonal fresh flowers and foliage. Have grown -up in England and
+                        Russia this husband and wife team have a strong European style, by mixing individual elements
+                        with a
+                        strong awareness of commercial and seasonal trends.
+                    </p>
+
+                    <p class="read-more"><a href="#" class="button" id="read-more-button">Read More</a></p>
+                </div>
             </div>
             <div class="col-md-4 foot">
                 <h4><strong>SOCIAL LINKS</strong></h4>
@@ -566,28 +598,19 @@
 <!--/.FOOTER END-->
 <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
 <!-- CORE JQUERY  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function () {
-    $('.carousel').carousel({
-    });
+    $(document).ready(function () {
+        $('.carousel').carousel({
+        });
 
-    $('.carousel').carousel('cycle');
-});
+        $('.carousel').carousel('cycle');
+    });
 </script>
 <!-- BOOTSTRAP SCRIPTS  -->
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <script src="assets/js/njf.js"></script>
 <script src="assets/js/simpleCart.js"></script>
-<script>
-  simpleCart({
-    checkout: {
-      type: "SendForm",
-      email: "sendmail.php"
-    }
-  });
-</script>
-
 
 </body>
 </html>

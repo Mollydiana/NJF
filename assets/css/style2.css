@@ -1180,25 +1180,25 @@ legend {
     color: #fff !important;
 }
 
-.promo-1 {
-    color: #FFFFFF;
-    font-family: Oswald, Helvetica Neue;
-    margin-bottom: 15px;
-    font-weight: lighter;
-    padding: 5px 0;
-    text-align: center;
-    text-transform: uppercase;
-}
+/*.promo-1 {*/
+    /*color: #FFFFFF;*/
+    /*font-family: Oswald, Helvetica Neue, serif;*/
+    /*margin-bottom: 15px;*/
+    /*font-weight: lighter;*/
+    /*padding: 5px 0;*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
-.promo-1sub {
-    background: #F2F2F2;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    margin-bottom: 15px;
-    padding: 5px 0;
-    text-align: center;
-    text-transform: uppercase;
-}
+/*.promo-1sub {*/
+    /*background: #F2F2F2;*/
+    /*font-size: 14px;*/
+    /*letter-spacing: 0.5px;*/
+    /*margin-bottom: 15px;*/
+    /*padding: 5px 0;*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
 /***  ------- Cart Dropdown Menu Style ------- ***/
 
@@ -1316,11 +1316,11 @@ legend {
     text-align: center;
     width: 100%;
     padding: 5px 0;
-    font-weight: 600px;
+    font-weight: 600;
     text-transform: capitalize;
     font-size: 16px;
     background: rgb(0, 0, 0);
-    background: transparent\9;
+    /*background: transparent\9;*/
     background: rgba(0, 0, 0, 0.8);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000); /* IE FIX */
     zoom: 1;
@@ -3068,12 +3068,13 @@ h1.bolder-style.dark, h1.bolder-style.dark a {
 }
 
 .description p {
-    color: #7F8C8D;
-    font-size: 0.92em;
-    min-height: 90px;
-    max-height: 100px;
-    overflow: hidden;
-    line-height: 18px;
+      color: #7F8C8D;
+  font-size: 0.92em;
+  min-height: 90px;
+  max-height: 100px;
+  overflow: hidden;
+  line-height: 18px;
+  margin-bottom: -10px;
 }
 
 .price {
@@ -5906,3 +5907,6 @@ small {
     text-transform: uppercase;
     color: #262626;
 }
+
+
+/*
