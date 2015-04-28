@@ -46,8 +46,8 @@
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
 /* google webfont */
 @import url(http://fonts.googleapis.com/css?family=Tangerine|Great+Vibes|Pinyon+Script);
-
 /* google webfont */
+@import url(http://fonts.googleapis.com/css?family=Yellowtail|Parisienne|Bad+Script|La+Belle+Aurore|Mr+De+Haviland|Over+the+Rainbow|Shadows+Into+Light+Two|Satisfy|Rock+Salt);
 
 /* =============================================================== */
 /* FOUNDATION
@@ -1541,8 +1541,10 @@ p {
     margin-right: -44px;
     margin-left: -36px;
     font-size: 1.65em;
-font-family: 'Pinyon Script', cursive;}
-
+    font-size: 2em;
+    font-family: 'Mr De Haviland', cursive;
+    font-family: 'La Belle Aurore', cursive;
+}
 .swiper-container {
     width: 100%;
     height: 100%;

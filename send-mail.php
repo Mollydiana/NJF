@@ -5,7 +5,7 @@ $emailto = 'Mollydiana@gmail.com';
 	// retrieve from parameters
 	$emailfrom = isset($_POST["email"]) ? $_POST["email"] : "";
 	$nocomment = isset($_POST["nocomment"]) ? $_POST["nocomment"] : "";
-	$subject = 'Email from Decision Academy';
+	$subject = 'Email from NJF';
 	$message = '';
 	$response = '';
 	$response_fail = 'There was an error verifying your details.';	

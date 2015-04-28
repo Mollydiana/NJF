@@ -19,12 +19,15 @@
     <link href="assets/css/animate.min.css" rel="stylesheet">
     <link href="assets/css/style2.css" rel="stylesheet"/>
 <script>
+    $( document ).ready(function() {
   simpleCart({
     checkout: {
-      type: "PayPal",
-      email: "Mollydiana@gmail.com"
+      type: "SendForm",
+      email: "send-mail.php"
     }
   });
+});
+
 </script>
 </head>
 <body>

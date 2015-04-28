@@ -19,12 +19,15 @@
     <link href="assets/css/animate.min.css" rel="stylesheet">
     <link href="assets/css/style2.css" rel="stylesheet"/>
     <script>
-        simpleCart({
-            checkout: {
-                type: "SendForm",
-                email: "send-mail.php"
-            }
-        });
+    $( document ).ready(function() {
+  simpleCart({
+    checkout: {
+      type: "SendForm",
+      email: "send-mail.php"
+    }
+  });
+});
+
     </script>
 </head>
 <body>
@@ -200,7 +203,7 @@
                             </div>
 
                             <a class="btn btn-primary btn-lg btn-block" title="checkout"
-                               href="checkout-1.html" style="margin-bottom:20px"> Proceed to checkout &nbsp; <i
+                               href="checkout.html" style="margin-bottom:20px"> Proceed to checkout &nbsp; <i
                                     class="fa fa-arrow-right"></i> </a>
 
 
