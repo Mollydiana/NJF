@@ -24,7 +24,16 @@
     checkout: {
       type: "SendForm",
       email: "send-mail.php"
-    }
+    },
+    cartColumns: [
+        { attr: "name" , label: "Name" } ,
+        { attr: "price" , label: "Price", view: 'currency' } ,
+        { view: "decrement" , label: false , text: "-" } ,
+        { attr: "quantity" , label: "Qty" } ,
+        { view: "increment" , label: false , text: "+" } ,
+        { attr: "total" , label: "SubTotal", view: 'currency' } ,
+        { view: "remove" , text: "Remove" , label: false }
+    ]
   });
 });
 
@@ -75,7 +84,7 @@
         <ul class="breadcrumb">
             <li><a href="index.html">Home</a></li>
             <li class="active">Cart</li>
-            <li><a href="checkout-1.html">Checkout</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
         </ul>
     </div>
 </div>
@@ -110,7 +119,9 @@
 
                         <tr class="CartProduct">
                             <td class="item-thumb">
-                                <div><img src="images/product/store-a1.jpg" alt="img"></div>
+                                <div>
+
+                                </div>
                             </td>
                             <td>
                                 <div class="CartDescription">
@@ -120,11 +131,12 @@
                                     <div class="item-price"><span></span></div>
                                 </div>
                             </td>
-                            <div class="item-remove "><a href="javascript:;" class="simpleCart_remove">
-                                <td class="delete"><a title="Delete"> <i
-                                        class="glyphicon glyphicon-trash fa-2x"></i></a>
-                                </td>
-                            </a></div>
+                            <td class="delete">
+                                <div class="item-remove "><a href="javascript:;" class="simpleCart_remove">
+                                <i class="glyphicon glyphicon-trash fa-2x"></i></a>
+                                </div>
+                            </td>
+
                             <td><input class="quanitySniper" type="text" value="2" name="quanitySniper"></td>
                             <td class="price"></td>
                         </tr>
