@@ -18,17 +18,17 @@
     <link href="assets/css/owl.theme.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
     <link href="assets/css/style2.css" rel="stylesheet"/>
-<script>
-    $( document ).ready(function() {
-  simpleCart({
-    checkout: {
-      type: "SendForm",
-      email: "send-mail.php"
-    }
-  });
-});
+    <script>
+        $(document).ready(function () {
+            simpleCart({
+                checkout: {
+                    type: "SendForm",
+                    email: "send-mail.php"
+                }
+            });
+        });
 
-</script>
+    </script>
 </head>
 <body>
 <div id="nav" class="navbar navbar-fixed-top">
@@ -39,7 +39,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" rel="NJF" href="#">
+            <a class="navbar-brand" rel="NJF" href="index.html">
                 <img height="50" src="assets/img/NJFlogo.png" alt="not just flowers">
             </a>
 
@@ -55,8 +55,8 @@
                 <li><a href="#footer-sec">About Us</a></li>
                 <li><a href="index.html#contact-sec">Events</a></li>
                 <li><a href="index.html#contact-sec">Contact</a></li>
-                <li><a style="font-size: 1.2em" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-
+                <li><a style="font-size: 1.2em" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                </li>
 
 
             </ul>
@@ -95,9 +95,10 @@
         </div>
     </div>
     <a class="left carousel-control" href="#buy-flowers" data-slide="prev"><p id="arrow-left"><img
-            src="assets/img/arrow-left.png"><span class="arrow-title">Buy Flowers</span></p></a>
-    <a class="right carousel-control" href="#carousel" data-slide="next"><p id="arrow-right"><span class="arrow-title">Weddings & Events</span><img
-            src="assets/img/arrow-right.png"></p></a>
+            src="assets/img/arrow-left.png"><span class="arrow-title-left">Buy Flowers</span></p></a>
+    <a class="right carousel-control" href="#carousel" data-slide="next"><p id="arrow-right"><span
+            class="arrow-title-right">Weddings <br>& Events</span><img
+            id="rightpng" src="assets/img/arrow-right.png"></p></a>
 </div>
 </span>
 <!-- carousel end -->
@@ -114,50 +115,127 @@
         <div class="product">
             <div class="image">
                 <div class="quickview">
-                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal1"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="index.html"><img src="images/product/store-a1.jpg" alt="img" class="img-responsive"></a>
-
-                <!--<div class="promotion"><span class="new-product"> NEW</span></div>-->
+                <a href="#"><img src="images/product/store-a1.jpg" alt="img" class="img-responsive"></a>
             </div>
             <div class="description">
                 <h4 class="item_name">Coco Chanel</h4>
-       <div class="item_price">
 
-    small&nbsp;<input type="radio" id="radio1" name="product" value="1s">
-    <label for="radio1" required value="1" >$75</label>&nbsp;|&nbsp;
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item-price">$75</label>&nbsp;|&nbsp;
 
-    med&nbsp;<input type="radio" id="radio2" name="product" value="1m">
-    <label for="radio2">$100</label>&nbsp;|&nbsp;
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$100</label>&nbsp;|&nbsp;
 
-    lg&nbsp;<input type="radio" id="radio3" name="product" value="1l">
-    <label for="radio3">$150</label>&nbsp;|&nbsp;
-
-</div>
-                <p>Fashion fades, only style remains the same - Coco Chanel. A simply elegant bouquet of pristine all
-                    white
-                    blooms complimented with a chic black vase. </p>
-                <!--<span class="item_price">$85 | $100 | $120</span><br>-->
-                <!--<label> size <select class="item_size">-->
-                    <!--<option value="Small"> Small</option>-->
-                    <!--<option value="Medium"> Medium</option>-->
-                    <!--<option value="Large"> Large</option>-->
-                <!--</select></label>-->
-                <!--<label> quantity <select class="item_Quantity">-->
-                    <!--<option value="1"> 1</option>-->
-                    <!--<option value="2"> 2</option>-->
-                    <!--<option value="3"> 3</option>-->
-                    <!--<option value="4"> 4</option>-->
-                <!--</select></label>-->
-                <!--<div>sm&nbsp; | &nbsp; 75 <input type="Radio" name="product" value="1s" style="border:0;cursor:pointer;"><br>-->
-                    <!--md&nbsp; | &nbsp; 100 <input type="Radio" name="product" value="1m" style="border:0;cursor:pointer;"><br>-->
-                    <!--lg&nbsp; | &nbsp; 150 <input type="Radio" name="product" value="1l" style="border:0;cursor:pointer;"></div>-->
-            <!--<br>-->
-
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$150</label>
+                </p>
             </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
+        </div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal2"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-a2.jpg" alt="img" class="img-responsive"></a>
+            </div>
+            <div class="description">
+                <h4><a href="#">The Royal Jewels</a></h4>
 
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$125</label>&nbsp;|&nbsp;
 
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$175</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$225</label>
+                </p>
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
+        </div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal3"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-a3.jpg" alt="img" class="img-responsive"></a>
+            </div>
+            <div class="description">
+                <h4><a href="#">Spring Morning</a></h4>
+
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$75</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$100</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$125</label>
+                </p>
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
+        </div>
+    </div>
+</div>
+<!--/.item-->
+<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal4"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-b1.jpg" alt="img" class="img-responsive"></a>
+            </div>
+            <div class="description">
+                <h4><a href="#">Honey Bunny</a></h4>
+
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$75</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$100</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$145</label>
+                </p>
+            </div>
 
             <div class="action-control">
                 <a class="item_add" onclick="javascript;" href="cart.html">
@@ -170,292 +248,396 @@
 </div>
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal5"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-b2.jpg" alt="img" class="img-responsive"></a>
             </div>
-            <a href="index.html"><img src="images/product/store-a2.jpg" alt="img" class="img-responsive"></a>
+            <div class="description">
+                <h4><a href="#">Brandy Snaps</a></h4>
 
-            <div class="promotion"></div>
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$85</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$100</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$125</label>
+                </p>
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
         </div>
-        <div class="description">
-            <h4><a href="index.html">The Royal Jewels</a></h4>
-
-            <p>Fit for any Queen. Inspired by rich gem tones and market&#8217;s most exquisite finds, this arrangement
-                showcases Phalaenopsis, Lady slipper and Vanda orchids, accompanied with bold merlot calla lilies.</p>
-            <span class="size"></span></div>
-
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
     </div>
 </div>
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal6"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-b3.jpg" alt="img" class="img-responsive"></a>
             </div>
-            <a href="index.html"><img src="images/product/store-a3.jpg" alt="img" class="img-responsive"></a>
+            <div class="description">
+                <h4><a href="#"> Earthy Brights </a></h4>
 
-            <div class="promotion"><span class="new-product"> NEW</span></div>
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$75</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$100</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$125</label>
+                </p>
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
         </div>
-        <div class="description">
-            <h4><a href="index.html">Spring Morning</a></h4>
-
-            <p>Wake-up to Spring with all this seasons local faves! Hyacinth, tulips, lilacs, sweet-pea, daffodils, this
-                list goes on... </p>
-            <span class="size"></span></div>
-
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
     </div>
 </div>
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal7"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-c1.jpg" alt="img" class="img-responsive"></a>
             </div>
-            <a href="index.html"><img src="images/product/store-b1.jpg" alt="img" class="img-responsive"></a>
+            <div class="description">
+                <h4><a href="#">Bold & Beautiful</a></h4>
+
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$75</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$100</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$145</label>
+                </p>
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
         </div>
-        <div class="description">
-            <h4><a href="index.html">Honey Bunny</a></h4>
-
-            <p>Fresh spring mix of the SF Flower Marts growers. Celebrate fresh, local seasonal blooms include lilacs
-                garden roses, tulips, daffodils, perfect for all Spring holidays! </p>
-            <span class="size"></span></div>
-
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
     </div>
 </div>
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal8"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-c2.jpg" alt="img" class="img-responsive"></a>
             </div>
-            <a href="index.html"><img src="images/product/store-b2.jpg" alt="img" class="img-responsive"></a>
-        </div>
-        <div class="description">
-            <h4><a href="index.html">Brandy Snaps</a></h4>
+            <div class="description">
+                <h4><a href="#">Textured Romance</a></h4>
 
-            <p>A sophisticated arrangement pairing Cherry Brandy roses, hypercum berry, chartreuse hydrangea embellished
-                with variegated foliage. </p>
-            <span class="size"></span></div>
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$85</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$100</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$125</label>
+                </p>
+                <!--<p>Local seasonal protea, cymbidium orchids create an exotic mix, accented with other farm fresh local-->
+                <!--treats.</p>-->
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
+        </div>
     </div>
 </div>
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal9"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-c3.jpg" alt="img" class="img-responsive"></a>
             </div>
-            <a href="index.html"><img src="images/product/store-b3.jpg" alt="img" class="img-responsive"></a>
-        </div>
-        <div class="description">
-            <h4><a href="index.html"> Earthy Brights </a></h4>
+            <div class="description">
+                <h4><a href="#">Dream Team </a></h4>
 
-            <p>Simple and strong colors and textures perfectly packed together here. Kales, lilies, geraniums, callas,
-                stocks.</p>
-            <span class="size"></span></div>
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$75</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$100</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$125</label>
+                </p>
+                <!--<p>Tulips, hyacinth and blue thistle come together making the perfect team.</p>-->
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
+        </div>
     </div>
 </div>
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
-            </div>
-            <a href="index.html"><img src="images/product/store-c1.jpg" alt="img" class="img-responsive"></a>
-        </div>
-        <div class="description">
-            <h4><a href="index.html">Bold & Beautiful</a></h4>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal10"
+                       data-toggle="modal">View </a>
+                </div>
+                <a href="#"><img src="images/product/store-d1.jpg" alt="img" class="img-responsive"></a>
 
-            <p>Color and texture are fused in this striking combination of vibrant hydrangea, Cymbidium orchids,
-                decorative kale and lush green Brunia & Brazilia, finished in a leaf wrapped glass vase.</p>
-            <span class="size"></span></div>
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+            </div>
+            <div class="description">
+                <h4><a href="#">Butterscotch</a></h4>
+
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$75</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$100</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$125</label>
+                </p>
+                <!--<p>Soothing yellows & creams calm the soul with perfect blend of roses, callas, kales, fiddlehead ferns-->
+                <!--&-->
+                <!--craspedia.</p>-->
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
+        </div>
     </div>
 </div>
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
-            </div>
-            <a href="index.html"><img src="images/product/store-c2.jpg" alt="img" class="img-responsive"></a>
-        </div>
-        <div class="description">
-            <h4><a href="index.html">Textured Romance</a></h4>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal11"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-d2.jpg" alt="img" class="img-responsive"></a>
 
-            <p>Local seasonal protea, cymbidium orchids create an exotic mix, accented with other farm fresh local
-                treats.</p>
-            <span class="size"></span></div>
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+                <div class="promotion"></div>
+            </div>
+            <div class="description">
+                <h4><a href="#">Spring Thing </a></h4>
+
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$75</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$100</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$125</label>
+                </p>
+                <!--<p>Lush fresh mix of local spring blooms, hyacinth, tulips, stock have fun with others.</p>-->
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
+        </div>
     </div>
 </div>
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
-            </div>
-            <a href="index.html"><img src="images/product/store-c3.jpg" alt="img" class="img-responsive"></a>
-        </div>
-        <div class="description">
-            <h4><a href="index.html">Dream Team </a></h4>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal12"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-d3.jpg" alt="img" class="img-responsive"></a>
 
-            <p>Tulips, hyacinth and blue thistle come together making the perfect team.</p>
-            <span class="size"></span></div>
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
+            </div>
+            <div class="description">
+                <h4><a href="#">Green Goddess</a></h4>
+
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$125</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$175</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$225</label>
+                </p>
+                <!--<p>Go green, revitalize and rejuvenate with super fresh tasty all green arrangement.</p>-->
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
+        </div>
     </div>
 </div>
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal">View </a>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal13"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-e1.jpg" alt="img" class="img-responsive"></a>
+
             </div>
-            <a href="index.html"><img src="images/product/store-d1.jpg" alt="img" class="img-responsive"></a>
+            <div class="description">
+                <h4><a href="#">Tulip Trio</a></h4>
 
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$80</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$120</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$150</label>
+                </p>
+                <!--<p>Modern design here color blocking with tulips. Look inside the vase for a hidden treasure of-->
+                <!--succulents.</p>-->
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
         </div>
-        <div class="description">
-            <h4><a href="index.html">Butterscotch</a></h4>
-
-            <p>Soothing yellows & creams calm the soul with perfect blend of roses, callas, kales, fiddlehead ferns &
-                craspedia.</p>
-            <span class="size"></span></div>
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
     </div>
 </div>
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal14"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-e2.jpg" alt="img" class="img-responsive"></a>
+
+                <div class="promotion"></div>
             </div>
-            <a href="index.html"><img src="images/product/store-d2.jpg" alt="img" class="img-responsive"></a>
+            <div class="description">
+                <h4><a href="#"> Minty tulips </a></h4>
 
-            <div class="promotion"></div>
+                <p class="item_price">
+                    small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$75</label>&nbsp;|&nbsp;
+
+                    med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
+                    <label class="item_price">$100</label>&nbsp;|&nbsp;
+
+                    lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">
+                    <label class="item_price">$125</label>
+                </p>
+                <!--<p>Bold Red Tulips kissed with fresh organic mint.</p>-->
+            </div>
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
         </div>
-        <div class="description">
-            <h4><a href="index.html">Spring Thing </a></h4>
-
-            <p>Lush fresh mix of local spring blooms, hyacinth, tulips, stock have fun with others.</p>
-            <span class="size"></span></div>
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
     </div>
 </div>
 <!--/.item-->
 <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
+    <div class="simpleCart_shelfItem">
+        <div class="product">
+            <div class="image">
+                <div class="quickview">
+                    <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal15"
+                       data-toggle="modal"> View </a>
+                </div>
+                <a href="#"><img src="images/product/store-e3.jpg" alt="img" class="img-responsive"></a>
+
             </div>
-            <a href="index.html"><img src="images/product/store-d3.jpg" alt="img" class="img-responsive"></a>
+            <div class="description">
+                <h4><a href="#">Nine Lives</a></h4>
 
-        </div>
-        <div class="description">
-            <h4><a href="index.html">Green Goddess</a></h4>
+                <p class="item_price">
+                    one size&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
+                    <label class="item_price">$75</label>
 
-            <p>Go green, revitalize and rejuvenate with super fresh tasty all green arrangement.</p>
-            <span class="size"></span></div>
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
-    </div>
-</div>
-<!--/.item-->
-<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
+                    <!--med&nbsp;<input type="radio" class="item_size" name="product" value="1m">-->
+                    <!--<label>$100</label>&nbsp;|&nbsp;-->
+
+                    <!--lg&nbsp;<input type="radio" class="item_size" name="product" value="1l">-->
+                    <!--<label>$125</label>-->
+                </p>
+                <!--<p>You can never have too many succulents and air-plants friends. </p>-->
             </div>
-            <a href="index.html"><img src="images/product/store-e1.jpg" alt="img" class="img-responsive"></a>
-
+            <div class="action-control">
+                <a class="item_add" onclick="javascript;" href="cart.html">
+                    <span class="button-fill grey add2cart">
+                        <i class="glyphicon glyphicon-shopping-cart">
+                        </i> Add to cart </span>
+                </a></div>
         </div>
-        <div class="description">
-            <h4><a href="index.html">Tulip Trio</a></h4>
-
-            <p>Modern design here color blocking with tulips. Look inside the vase for a hidden treasure of
-                succulents.</p>
-            <span class="size"></span></div>
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
-    </div>
-</div>
-<!--/.item-->
-<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
-            </div>
-            <a href="index.html"><img src="images/product/store-e2.jpg" alt="img" class="img-responsive"></a>
-
-            <div class="promotion"></div>
-        </div>
-        <div class="description">
-            <h4><a href="index.html"> Minty tulips </a></h4>
-
-            <p>Bold Red Tulips kissed with fresh organic mint.</p>
-            <span class="size"></span></div>
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
-    </div>
-</div>
-<!--/.item-->
-<div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
-    <div class="product">
-        <div class="image">
-            <div class="quickview">
-                <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#product-details-modal"
-                   data-toggle="modal"> View </a>
-            </div>
-            <a href="index.html"><img src="images/product/store-e3.jpg" alt="img" class="img-responsive"></a>
-
-        </div>
-        <div class="description">
-            <h4><a href="index.html">Nine Lives</a></h4>
-
-            <p>You can never have too many succulents and air-plants friends. </p>
-            <span class="size"></span></div>
-        <div class="action-control"><a class="button-fill grey"> <span class="add2cart"><i
-                class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
     </div>
 </div>
 <!--/.item-->
@@ -465,93 +647,490 @@
 <!-- /.row -->
 </div>
 </div>
-<!-- Product Details Modal  -->
 
-<div class="modal fade" id="product-details-modal" tabindex="-1" role="dialog" aria-hidden="true">
+
+<!-- PRODUCT MODALS START  -->
+<!-- Modal#1 -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
             <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
-
                 <!-- product Image -->
-
                 <div class="main-image  col-lg-12 no-padding style3 modal-image">
                     <a class="product-largeimg-link" href="#">
-                        <img
-                                src="images/product/store-j2-lg.jpg"
-                                class="img-responsive product-largeimg"
-                                alt="img">
+                        <img src="images/zoom/store-a1-lg.jpg" class="img-responsive product-largeimg" alt="img">
                     </a>
                 </div>
-                <!--/.main-image-->
+                <!--/image-->
             </div>
-            <!--/.modal-product-thumb-->
         </div>
         <!--/ product Image-->
-
-
         <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
-
             <div class="modal-details-inner">
                 <h1 class="product-title">Coco Channel</h1>
 
-                <div class="product-price"><span class="price-sales">$70 | $100 | $150</span></div>
                 <div class="details-description">
                     <p>Take yourself back to that moment on the beach with this
                         flourish of vibrant tropical blooms. This fresh take on
                         an island favorite includes ginger,heliconia, antherium
                         and dramatic tropical foliage.</p>
                 </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#1 -->
 
-                <!--/.color-details-->
-
-                <div class="productFilter productFilterLook2">
-                    <div class="filterBox">
-                        <select>
-                            <option value="qtd" selected>Quantity</option>
-                            <option value="mango">1</option>
-                            <option value="bananas">2</option>
-                            <option value="watermelon">3</option>
-                            <option value="grapes">4</option>
-                        </select>
-                    </div>
-                    <div class="filterBox">
-                        <select>
-                            <option value="size" selected>Size</option>
-                            <option value="small">small</option>
-                            <option value="medium">medium</option>
-                            <option value="large">large</option>
-                        </select>
-                    </div>
+<!-- Modal#1 -->
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-a2-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
                 </div>
-                <!-- productFilter -->
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">The Royal Jewels</h1>
 
-                <div class="cart-actions">
-                    <div class="addto">
-                        <button onclick="productAddToCartForm.submit(this);" class="button btn-cart cart first"
-                                title="Add to Cart" type="button">Add to Cart
-                        </button>
-                    </div>
+                <div class="details-description">
+                    <p>Fit for any Queen.
+                        Inspired by rich gem tones and market’s most exquisite finds,
+                        this arrangement showcases Phalaenopsis, Lady slipper and Vanda orchids,
+                        accompanied with bold merlot calla lilies.</p>
                 </div>
                 <div class="clear"></div>
             </div>
         </div>
-        <!--/.modal-content-->
     </div>
-    <!-- End Modal -->
-    <!--/.productslider-->
-
 </div>
-<!--/.JUST-INTRO END-->
+<!-- End Modal#2 -->
+
+<!-- Modal#3 -->
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-a3-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Spring Morning</h1>
+
+                <div class="details-description">
+                    <p>Wake-up to Spring with all this seasons local faves! Hyacinth, tulips, lilacs, sweet-pea,
+                        daffodils, this list goes on...</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#3 -->
+
+<!-- Modal#4 -->
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-b1-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Honey Bunny</h1>
+
+                <div class="details-description">
+                    <p>Fresh spring mix of the SF Flower Marts growers. Celebrate fresh, local seasonal blooms include
+                        lilacs garden roses, tulips, daffodils, perfect for all Spring holidays!</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#4 -->
+
+<!-- Modal#5 -->
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-b2-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Brandy Snaps</h1>
+
+                <div class="details-description">
+                    <p>Vintage blooms are brought forward to the 21st century with a subtle modern twist. A
+                        sophisticated arrangement pairing Cherry Brandy roses, hypercum berry, chartreuse hydrangea
+                        embellished with variegated foliage.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#5 -->
+
+<!-- Modal#6 -->
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-b3-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Earthy brights</h1>
+
+                <div class="details-description">
+                    <p>Simple and strong colors and textures perfectly packed together here. Kales, lilies, geraniums,
+                        callas, stocks.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#6 -->
+
+<!-- Modal#7 -->
+<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-c1-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Bold & Beautiful</h1>
+
+                <div class="details-description">
+                    <p>Color and texture are fused in this striking combination of vibrant hydrangea, Cymbidium orchids,
+                        decorative kale and lush green Brunia & Brazilia, finished in a leaf wrapped glass vase.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#7 -->
+
+
+<!-- Modal#8 -->
+<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-c2-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Textured Romance</h1>
+
+                <div class="details-description">
+                    <p>Local seasonal protea, cymbidium orchids create an exotic mix, accented with other farm fresh
+                        local treats.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#8 -->
+
+
+<!-- Modal#9 -->
+<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-c3-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Dream Team</h1>
+
+                <div class="details-description">
+                    <p>Tulips, hyacinth and blue thistle come together making the perfect team.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#9 -->
+
+
+<!-- Modal#10 -->
+<div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-d1-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Butterscotch</h1>
+
+                <div class="details-description">
+                    <p>Soothing yellows & creams calm the soul with perfect blend of roses, callas, kales, fiddlehead ferns & craspedia.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#10 -->
+
+
+<!-- Modal#11 -->
+<div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-d2-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Spring Thing</h1>
+
+                <div class="details-description">
+                    <p>Lush fresh mix of local spring blooms, hyacinth, tulips, stock have fun with others.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#11 -->
+
+
+<!-- Modal#12 -->
+<div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-d3-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Green Goddess</h1>
+
+                <div class="details-description">
+                    <p>Go green, revitalize and rejuvenate with super fresh tasty all green arrangement.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#12 -->
+
+
+<!-- Modal#13 -->
+<div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-e1-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Tulip Trio</h1>
+
+                <div class="details-description">
+                    <p>Modern design here color blocking with tulips. Look inside the vase for a hidden treasure of succulents.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#13 -->
+
+
+<!-- Modal#14 -->
+<div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-e2-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Minty Tulips</h1>
+
+                <div class="details-description">
+                    <p>Bold Red Tulips kissed with fresh organic mint.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#14 -->
+
+
+<!-- Modal#15 -->
+<div class="modal fade" id="modal15" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button>
+            <div class="col-lg-5 col-md-5 col-sm-5  col-xs-12">
+                <!-- product Image -->
+                <div class="main-image  col-lg-12 no-padding style3 modal-image">
+                    <a class="product-largeimg-link" href="#">
+                        <img src="images/zoom/store-e3-lg.jpg" class="img-responsive product-largeimg" alt="img">
+                    </a>
+                </div>
+                <!--/image-->
+            </div>
+        </div>
+        <!--/ product Image-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 modal-details no-padding">
+            <div class="modal-details-inner">
+                <h1 class="product-title">Nine Lives</h1>
+
+                <div class="details-description">
+                    <p>You can never have too many succulents and air-plants friends.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal#15 -->
+
+<!--/.MODAL SECTION DONE-->
 <section class="note-sec">
 
     <div class="container">
         <div class="row text-center pad-row">
             <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 ">
                 <p class="quote">
-                    <i class="fa fa-quote-left fa-1x"></i>From traditional arrangements to creations that push
+                    <i class="fa fa-quote-left fa-1x"></i>Traditional arrangements and creations that push
                     preconceived boundaries. Whether young and
-                    funky, sophisticated, contemporary or traditional, our flowers come with passion and love.<i
+                    funky, sophisticated, contemporary or traditional, our flowers are designed with passion and love.<i
                         class="fa fa-quote-right fa-1x"></i>
 
                 </p>
@@ -564,8 +1143,8 @@
 </section>
 
 <section id="contact-sec">
-    <iframe class="cnt"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2486721990767!2d-122.43526299999999!3d37.760767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1b33299e05%3A0xf871a655029e3512!2sNot+Just+Flowers!5e0!3m2!1sen!2sus!4v1428616045412"></iframe>
+        <img class="img-responsive" id='lisa_andrei'src="assets/img/lisaAndrei.jpg">
+         <iframe class="cnt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2486721990767!2d-122.43526299999999!3d37.760767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1b33299e05%3A0xf871a655029e3512!2sNot+Just+Flowers!5e0!3m2!1sen!2sus!4v1428616045412"></iframe>
 </section>
 
 <!--/.NOTE END-->

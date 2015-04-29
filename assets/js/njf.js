@@ -11,10 +11,10 @@ $(window).on('scroll',function(){
     if ($(window).width() > 768) {
         if (stop > mainbottom) {
             $('#nav').addClass('past-main');
-            $('.navbar-nav > li > a').css("color", "#262626");
+            $('.navbar-nav > li > a').css("color", "#2c3e50");
         } else {
             $('#nav').removeClass('past-main');
-            $('.navbar-nav > li > a').css("color", "#262626");
+            $('.navbar-nav > li > a').css("color", "#2c3e50");
         }
     }
 });
