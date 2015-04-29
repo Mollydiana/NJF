@@ -91,7 +91,7 @@
 					currency				: "USD",
 					language				: "english-us",
 
-					cartStyle				: "div",
+					cartStyle				: "table",
 					cartColumns			: [
 						{ attr: "name", label: "Name" },
 						{ attr: "price", label: "Price", view: 'currency' },
@@ -111,7 +111,7 @@
 
 					taxRate				: 0,
 
-					taxShipping			: false,
+					taxShipping			: 8.5,
 
 					data				: {}
 
