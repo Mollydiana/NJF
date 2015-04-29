@@ -91,7 +91,7 @@
 					currency				: "USD",
 					language				: "english-us",
 
-					cartStyle				: "table",
+					cartStyle				: "div",
 					cartColumns			: [
 						{ attr: "name", label: "Name" },
 						{ attr: "price", label: "Price", view: 'currency' },

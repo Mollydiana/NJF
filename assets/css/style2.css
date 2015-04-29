@@ -50,6 +50,7 @@
 @import url(http://fonts.googleapis.com/css?family=Yellowtail|Parisienne|Bad+Script|La+Belle+Aurore|Mr+De+Haviland|Over+the+Rainbow|Shadows+Into+Light+Two|Satisfy|Rock+Salt);
 /* google webfont */
 @import url(http://fonts.googleapis.com/css?family=Parisienne|Niconne|Stalemate|Delius+Swash+Caps|Pacifico|Ruthie|Arizonia|Dawning+of+a+New+Day|Nothing+You+Could+Do);
+
 /* =============================================================== */
 /* FOUNDATION
 /* =============================================================== */
@@ -4120,13 +4121,29 @@ button.first {
 }
 
 tr.CartProduct td, tr.CartProduct th {
-    text-align: center;
-}
-
-tr.CartProduct td:nth-child(2) {
     text-align: left;
 }
-
+.simpleCart_items {
+    padding: 8px;
+}
+.simpleCart_items .item-quantity {
+      padding: 0 84px;
+    font-size: larger;
+      text-align: left;
+     padding-left: 7%;
+}
+.simpleCart_items .item-name {
+      padding-left: 7%;
+}
+.simpleCart_items .item-price {
+      padding-left: 7%;
+    font-size: larger;
+      text-align: left;
+}
+tr.CartProduct2 td:nth-child(2) {
+      font-size: larger;
+      text-align: left;
+}
 .cartTable {
     border-top: solid 1px #EBEDEF;
 }
@@ -4144,7 +4161,16 @@ tr.CartProduct td:nth-child(2) {
 }
 
 #cart-summary tr td:nth-child(2) {
-    text-align: right;
+    /*text-align: right;*/
+}
+
+/* =============================================================== */
+/* CART MINI PAGE
+/* =============================================================== */
+@media screen and (max-width: 740px) {
+  .simpleCart_items .item-thumb{
+      width: 40%;
+  }
 }
 
 /* =============================================================== */
@@ -4173,6 +4199,7 @@ tr.CartProduct td:nth-child(2) {
 .cartMiniTable {
     border: 1px solid #DDDDDD;
     padding: 10px;
+      overflow: hidden;
 }
 
 .rightSidebar img {
@@ -4255,7 +4282,6 @@ span.success, p.success div.success {
     background-image: linear-gradient(to bottom, transparent, #fff);
     /* Fallback (could use .jpg/.png alternatively) */
 }
-
 
 #read-more-button {
     color: #00b3ca;
@@ -5592,7 +5618,6 @@ html, body {
     z-index: 2;
 }
 
-
 .arrow-title-left {
     display: inline-block;
     font-weight: lighter;
@@ -5601,20 +5626,23 @@ html, body {
     margin: -46% 0 0 111px;
     /* font-size: 1.65em; */
     font-size: 5.5em;
-font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Nothing You Could Do', cursive;
 }
+
 .arrow-title-right {
     display: inline-block;
     font-weight: lighter;
     line-height: 0.8em;
     margin: 34% -21% 0 -38%;
     font-size: 5.2em;
-font-family: 'Nothing You Could Do', cursive;
+    font-family: 'Nothing You Could Do', cursive;
 }
-#rightpng{
 
-      margin-top: -34%;
+#rightpng {
+
+    margin-top: -34%;
 }
+
 #arrow-right {
     position: absolute;
     right: 0;
@@ -5637,6 +5665,7 @@ font-family: 'Nothing You Could Do', cursive;
 .carousel-control.right {
     background-repeat: repeat-x;
     background-image: linear-gradient(to left, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, .0001) 100%);
+
 }
 
 .carousel-control {
@@ -5645,7 +5674,10 @@ font-family: 'Nothing You Could Do', cursive;
     color: #fff;
     text-align: left;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .8);
+    opacity: .6;
 }
+
+
 
 /*@media (max-width: 459px) {*/
 /*.carousel-inner {*/

@@ -18,18 +18,23 @@
     <link href="assets/css/owl.theme.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
     <link href="assets/css/style2.css" rel="stylesheet"/>
+    <!-- CORE JQUERY  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="assets/js/simpleCart.js"></script>
+    <script src="assets/js/NJFcart.js"></script>
 
     <script>
         $(document).ready(function () {
-            simpleCart({
-                checkout: {
-                    type: "SendForm",
-                    email: "send-mail.php"
+            checkCart();
+            function checkCart() {
+                var item = $('.simpleCart_quantity');
+                if (item.length > 0) {
+                    $('#if-cart-empty').hide();
+                } else {
+                    $('#if-cart-empty').show();
                 }
-            });
+            }
         });
-
     </script>
 </head>
 <body>
@@ -57,7 +62,10 @@
                 <li><a href="#footer-sec">About Us</a></li>
                 <li><a href="index.html#contact-sec">Events</a></li>
                 <li><a href="index.html#contact-sec">Contact</a></li>
-                <li><a style="font-size: 1.2em" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                <li><a style="font-size: 1.2em" href="cart.html">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                    <span style="color: #00b3ca;font-weight: 800; font-size: 0.85em; display: none;" id="if-cart-empty"
+                          class="simpleCart_quantity"></span></a>
                 </li>
 
 
@@ -128,7 +136,7 @@
 
                 <p class="item_quantity" value="1">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
-                    <label class="item-price">$75</label>&nbsp;|&nbsp;
+                    <label><span class="item_price">$75</span></label>&nbsp;|&nbsp;
 
                     med&nbsp;<input type="radio" class="item_size" name="product" value="1m">
                     <label class="item_price">$100</label>&nbsp;|&nbsp;
@@ -137,12 +145,15 @@
                     <label class="item_price">$150</label>
                 </p>
             </div>
+            <input type="hidden" class="item_shipping" value="5.00"/>
+
             <div class="action-control">
                 <a class="item_add" onclick="javascript;" href="cart.html">
                     <span class="button-fill grey add2cart">
                         <i class="glyphicon glyphicon-shopping-cart">
                         </i> Add to cart </span>
                 </a></div>
+
         </div>
     </div>
 </div>
@@ -155,10 +166,10 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal2"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-a2.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img class="item_thumb img-responsive" src="images/product/store-a2.jpg" alt="img"></a>
             </div>
             <div class="description">
-                <h4><a href="#">The Royal Jewels</a></h4>
+                <h4 class="item_name">The Royal Jewels</h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -189,10 +200,10 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal3"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-a3.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-a3.jpg" alt="img" class="item_thumb img-responsive"></a>
             </div>
             <div class="description">
-                <h4><a href="#">Spring Morning</a></h4>
+                <h4 class="item_name">Spring Morning</h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -223,10 +234,10 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal4"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-b1.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-b1.jpg" alt="img" class="item_thumb img-responsive"></a>
             </div>
             <div class="description">
-                <h4><a href="#">Honey Bunny</a></h4>
+                <h4 class="item_name">Honey Bunny</h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -258,10 +269,10 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal5"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-b2.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-b2.jpg" alt="img" class="item_thumb img-responsive"></a>
             </div>
             <div class="description">
-                <h4><a href="#">Brandy Snaps</a></h4>
+                <h4 class="item_name">Brandy Snaps</h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -292,10 +303,10 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal6"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-b3.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-b3.jpg" alt="img" class="item_thumb img-responsive"></a>
             </div>
             <div class="description">
-                <h4><a href="#"> Earthy Brights </a></h4>
+                <h4 class="item_name"> Earthy Brights </h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -326,10 +337,10 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal7"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-c1.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-c1.jpg" alt="img" class="item_thumb img-responsive"></a>
             </div>
             <div class="description">
-                <h4><a href="#">Bold & Beautiful</a></h4>
+                <h4 class="item_name">Bold & Beautiful</h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -360,10 +371,10 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal8"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-c2.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-c2.jpg" alt="img" class="item_thumb img-responsive"></a>
             </div>
             <div class="description">
-                <h4><a href="#">Textured Romance</a></h4>
+                <h4 class="item_name">Textured Romance</h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -396,10 +407,10 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal9"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-c3.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-c3.jpg" alt="img" class="item_thumb img-responsive"></a>
             </div>
             <div class="description">
-                <h4><a href="#">Dream Team </a></h4>
+                <h4 class="item_name">Dream Team </h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -431,11 +442,11 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal10"
                        data-toggle="modal">View </a>
                 </div>
-                <a href="#"><img src="images/product/store-d1.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-d1.jpg" alt="img" class="item_thumb img-responsive"></a>
 
             </div>
             <div class="description">
-                <h4><a href="#">Butterscotch</a></h4>
+                <h4 class="item_name">Butterscotch</h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -469,12 +480,12 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal11"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-d2.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-d2.jpg" alt="img" class="item_thumb img-responsive"></a>
 
                 <div class="promotion"></div>
             </div>
             <div class="description">
-                <h4><a href="#">Spring Thing </a></h4>
+                <h4 class="item_name">Spring Thing </h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -506,11 +517,11 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal12"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-d3.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-d3.jpg" alt="img" class="item_thumb img-responsive"></a>
 
             </div>
             <div class="description">
-                <h4><a href="#">Green Goddess</a></h4>
+                <h4 class="item_name">Green Goddess</h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -542,11 +553,11 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal13"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-e1.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-e1.jpg" alt="img" class="item_thumb img-responsive"></a>
 
             </div>
             <div class="description">
-                <h4><a href="#">Tulip Trio</a></h4>
+                <h4 class="item_name">Tulip Trio</h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -579,12 +590,12 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal14"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-e2.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-e2.jpg" alt="img" class="item_thumb img-responsive"></a>
 
                 <div class="promotion"></div>
             </div>
             <div class="description">
-                <h4><a href="#"> Minty tulips </a></h4>
+                <h4 class="item_name"> Minty tulips</h4>
 
                 <p class="item_price">
                     small&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -616,11 +627,11 @@
                     <a alt="Quick View" class="btn btn-xs  btn-quickview" data-target="#modal15"
                        data-toggle="modal"> View </a>
                 </div>
-                <a href="#"><img src="images/product/store-e3.jpg" alt="img" class="img-responsive"></a>
+                <a href="#"><img src="images/product/store-e3.jpg" alt="img" class="item_thumb img-responsive"></a>
 
             </div>
             <div class="description">
-                <h4><a href="#">Nine Lives</a></h4>
+                <h4 class="item_name">Nine Lives</h4>
 
                 <p class="item_price">
                     one size&nbsp;<input type="radio" class="item_size" name="product" value="1s" required>
@@ -960,7 +971,8 @@
                 <h1 class="product-title">Butterscotch</h1>
 
                 <div class="details-description">
-                    <p>Soothing yellows & creams calm the soul with perfect blend of roses, callas, kales, fiddlehead ferns & craspedia.</p>
+                    <p>Soothing yellows & creams calm the soul with perfect blend of roses, callas, kales, fiddlehead
+                        ferns & craspedia.</p>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -1053,7 +1065,8 @@
                 <h1 class="product-title">Tulip Trio</h1>
 
                 <div class="details-description">
-                    <p>Modern design here color blocking with tulips. Look inside the vase for a hidden treasure of succulents.</p>
+                    <p>Modern design here color blocking with tulips. Look inside the vase for a hidden treasure of
+                        succulents.</p>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -1146,8 +1159,9 @@
 </section>
 
 <section id="contact-sec">
-        <img class="img-responsive" id='lisa_andrei'src="assets/img/lisaAndrei.jpg">
-         <iframe class="cnt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2486721990767!2d-122.43526299999999!3d37.760767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1b33299e05%3A0xf871a655029e3512!2sNot+Just+Flowers!5e0!3m2!1sen!2sus!4v1428616045412"></iframe>
+    <img class="img-responsive" id='lisa_andrei' src="assets/img/lisaAndrei.jpg">
+    <iframe class="cnt"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2486721990767!2d-122.43526299999999!3d37.760767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1b33299e05%3A0xf871a655029e3512!2sNot+Just+Flowers!5e0!3m2!1sen!2sus!4v1428616045412"></iframe>
 </section>
 
 <!--/.NOTE END-->
