@@ -3054,6 +3054,7 @@ h1.bolder-style.dark, h1.bolder-style.dark a {
     font-size: 18px;
     font-weight: bold;
     color: #2c3e50;
+    margin: 10%;
 }
 
 .action-control {
@@ -3300,6 +3301,7 @@ h5.parallaxSubtitle {
     line-height: 38px;
     background: #445561;
     color: white;
+    border: 1px solid #445561;
 }
 
 .button-fill:hover {
@@ -5599,7 +5601,7 @@ html, body {
     margin: -46% 0 0 111px;
     /* font-size: 1.65em; */
     font-size: 5.5em;
-font-family: 'Parisienne', cursive;
+font-family: 'Nothing You Could Do', cursive;
 }
 .arrow-title-right {
     display: inline-block;
@@ -5607,7 +5609,7 @@ font-family: 'Parisienne', cursive;
     line-height: 0.8em;
     margin: 34% -21% 0 -38%;
     font-size: 5.2em;
-font-family: 'Parisienne', cursive;
+font-family: 'Nothing You Could Do', cursive;
 }
 #rightpng{
 

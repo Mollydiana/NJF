@@ -18,26 +18,12 @@
     <link href="assets/css/owl.theme.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
     <link href="assets/css/style2.css" rel="stylesheet"/>
-    <script>
-    $( document ).ready(function() {
-  simpleCart({
-    checkout: {
-      type: "SendForm",
-      email: "send-mail.php"
-    },
-    cartColumns: [
-        { attr: "name" , label: "Name" } ,
-        { attr: "price" , label: "Price", view: 'currency' } ,
-        { view: "decrement" , label: false , text: "-" } ,
-        { attr: "quantity" , label: "Qty" } ,
-        { view: "increment" , label: false , text: "+" } ,
-        { attr: "total" , label: "SubTotal", view: 'currency' } ,
-        { view: "remove" , text: "Remove" , label: false }
-    ]
-  });
-});
+    <script src="assets/js/simpleCart.js" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript">
+		simpleCart.cartHeaders = ['Image','Name','Price','Options','Quantity_input','Total'];
+		simpleCart.checkoutTo = SendForm;
 
-    </script>
+	</script>
 </head>
 <body>
 <div id="nav" class="navbar navbar-fixed-top">
@@ -79,216 +65,187 @@
 <span id="home"></span>
 
 <div class="container main-container headerOffset">
-<div class="row">
-    <div class="breadcrumbDiv col-lg-12">
-        <ul class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">Cart</li>
-            <li><a href="checkout.html">Checkout</a></li>
-        </ul>
+    <div class="row">
+        <div class="breadcrumbDiv col-lg-12">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Cart</li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
     </div>
-</div>
-<!--/.row-->
+    <!--/.row-->
 
-<div class="row">
-    <div class="col-lg-9 col-md-9 col-sm-7">
-        <h1 class="section-title-inner"><span><i class="glyphicon glyphicon-shopping-cart"></i> Shopping cart </span>
-        </h1>
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-7">
+            <h1 class="section-title-inner"><span><i
+                    class="glyphicon glyphicon-shopping-cart"></i> Shopping cart </span>
+            </h1>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-5 rightSidebar">
+            <h4 class="caps"><a href="index.html#buy-flowers"><i class="fa fa-chevron-left"></i> Back to shopping </a>
+            </h4>
+        </div>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-5 rightSidebar">
-        <h4 class="caps"><a href="index.html#buy-flowers"><i class="fa fa-chevron-left"></i> Back to shopping </a></h4>
-    </div>
-</div>
-<!--/.row-->
+    <!--/.row-->
 
-<div class="row">
-    <div class="col-lg-9 col-md-9 col-sm-7">
-        <div class="row userInfo">
-            <div class="col-xs-12 col-sm-12">
-                <div class="cartContent w100">
-                    <table class="cartTable table-responsive" style="width:100%">
-                        <tbody>
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-7">
+            <div class="row userInfo">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="cartContent w100">
+                        <table class="cartTable table-responsive" style="width:100%">
+                            <tbody>
 
-                        <tr class="CartProduct cartTableHeader">
-                            <td class="item-name" style="width:15%"> Product</td>
-                            <td style="width:40%">Details</td>
-                            <td style="width:10%" class="delete">&nbsp;</td>
-                            <td style="width:10%">QNT</td>
-                            <td style="width:15%">Total</td>
-                        </tr>
+                            <tr class="CartProduct cartTableHeader">
+                                <td class="item-name" style="width:15%"> Product</td>
+                                <td style="width:40%">Details</td>
+                                <td style="width:10%" class="delete">&nbsp;</td>
+                                <td style="width:10%">QNT</td>
+                                <td style="width:15%">Total</td>
+                            </tr>
 
-                        <tr class="CartProduct">
-                            <td class="item-thumb">
-                                <div>
+                            <tr class="CartProduct">
+                                <td class="item-thumb">
+                                    <div>
 
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="CartDescription">
+                                        <h4><a href="../../Desktop/E-Commerce%20Site/HTML/product-details.html"></a>
+                                        </h4>
+
+                                        <div class="simpleCart_items">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="delete">
+                                    <div class="item-remove "><a href="javascript:;" class="simpleCart_remove">
+                                        <i class="glyphicon glyphicon-trash fa-2x"></i></a>
+                                    </div>
+                                </td>
+
+                                <td></td>
+                                <td class="price"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+                        <div class="cartFooter w100">
+                            <div class="box-footer">
+                                <div class="pull-left"><a href="index.html#buy-flowers" class="btn btn-default"> <i
+                                        class="fa fa-arrow-left"></i> &nbsp; Continue shopping </a></div>
+                                <div class="pull-right">
+                                    <button type="submit" class="btn btn-default"><i class="fa fa-undo"></i> &nbsp;
+                                        Update
+                                        cart
+                                    </button>
                                 </div>
-                            </td>
-                            <td>
-                                <div class="CartDescription">
-                                    <h4><a href="../../Desktop/E-Commerce%20Site/HTML/product-details.html"></a></h4>
+                            </div>
+                        </div>
+                        <!--/ cartFooter -->
 
-                                    <div class="item-name"></div>
-                                    <div class="item-price"><span></span></div>
+                    </div>
+
+                </div>
+                <!--/row end-->
+
+            </div>
+
+            <!--/rightSidebar-->
+
+        </div>
+        <!--/row-->
+        <div class="col-lg-3 col-md-3 col-sm-5 rightSidebar">
+            <div class="contentBox">
+                <div class="w100 costDetails">
+                    <div class="table-block" id="order-detail-content">
+                        <div class="w100 cartMiniTable">
+                            <div id="cart-summary" class="std table">
+                                <div class="row">
+                                    <p style="margin-left: 10%;">Total:</p>
+                                    <span class="simpleCart_grandTotal price"></span>
                                 </div>
-                            </td>
-                            <td class="delete">
-                                <div class="item-remove "><a href="javascript:;" class="simpleCart_remove">
-                                <i class="glyphicon glyphicon-trash fa-2x"></i></a>
-                                </div>
-                            </td>
-
-                            <td><input class="quanitySniper" type="text" value="2" name="quanitySniper"></td>
-                            <td class="price"></td>
-                        </tr>
-                        </tbody>
-                    </table>
+                                <a class="button-fill grey" title="checkout"
+                                   href="checkout.html" style="margin: 7% 4% 0 4%;"> Proceed to checkout &nbsp; <i
+                                        class="fa fa-arrow-right"></i> </a>
 
 
-                    <!--<tr class="CartProduct">-->
-                    <!--<td  class="CartProductThumb"><div> <a href="../../Desktop/E-Commerce%20Site/HTML/product-details.html"><img src="../../Desktop/E-Commerce%20Site/HTML/images/product/a2.jpg" alt="img"></a> </div></td>-->
-                    <!--<td ><div class="CartDescription">-->
-                    <!--<h4> <a href="../../Desktop/E-Commerce%20Site/HTML/product-details.html">Denim T shirt Red </a> </h4>-->
-                    <!--<span class="size">12 x 1.5 L</span>-->
-                    <!--<div class="price"> <span>$30</span> </div>-->
-                    <!--</div></td>-->
-                    <!--<td class="delete"><a title="Delete"> <i class="glyphicon glyphicon-trash fa-2x"></i></a></td>-->
-                    <!--<td ><input class="quanitySniper" type="text" value="2" name="quanitySniper"></td>-->
-                    <!--<td >0</td>-->
-                    <!--<td class="price" >$60</td>-->
-                    <!--</tr>-->
-                    <!---->
-                    <!--<tr class="CartProduct">-->
-                    <!--<td  class="CartProductThumb">-->
-                    <!--<div> -->
-                    <!--<a href="../../Desktop/E-Commerce%20Site/HTML/product-details.html"><img src="../../Desktop/E-Commerce%20Site/HTML/images/product/a5.jpg" alt="img"></a>-->
-                    <!--</div>-->
-                    <!--</td>-->
-                    <!---->
-                    <!--<td ><div class="CartDescription">-->
-                    <!--<h4> <a href="../../Desktop/E-Commerce%20Site/HTML/product-details.html">Denim T shirt Blue </a> </h4>-->
-                    <!--<span class="size">12 x 1.5 L</span>-->
-                    <!--<div class="price"> <span>$8.80</span></div>-->
-                    <!--</div></td>-->
-                    <!--<td class="delete"><a title="Delete"> <i class="glyphicon glyphicon-trash fa-2x"></i></a></td>-->
-                    <!--<td ><input class="quanitySniper" type="text" value="2" name="quanitySniper"></td>-->
-                    <!--<td >0</td>-->
-                    <!--<td class="price">$60</td>-->
-                    <!--</tr>-->
-                    <!--</tbody>-->
-                    <!--</table>-->
-                    <!--</div>-->
-                    <!--cartContent-->
-
-                    <div class="cartFooter w100">
-                        <div class="box-footer">
-                            <div class="pull-left"><a href="index.html#buy-flowers" class="btn btn-default"> <i
-                                    class="fa fa-arrow-left"></i> &nbsp; Continue shopping </a></div>
-                            <div class="pull-right">
-                                <button type="submit" class="btn btn-default"><i class="fa fa-undo"></i> &nbsp; Update
-                                    cart
-                                </button>
                             </div>
                         </div>
                     </div>
-                    <!--/ cartFooter -->
-
                 </div>
+                <!-- End popular -->
 
             </div>
-            <!--/row end-->
+            <div style="clear:both"></div>
 
         </div>
+        <!-- /.main-container -->
 
-        <!--/rightSidebar-->
+        <div class="gap"></div>
+
 
     </div>
-    <!--/row-->
-    <div class="col-lg-3 col-md-3 col-sm-5 rightSidebar">
-        <div class="contentBox">
-            <div class="w100 costDetails">
-                <div class="table-block" id="order-detail-content">
-                    <div class="w100 cartMiniTable">
-                        <div id="cart-summary" class="std table">
-                            <div class="row">
-                                <p>Total products</p>
-                                <span class="simpleCart_grandTotal price"></span>
-                            </div>
+    <section id="footer-sec">
 
-                            <a class="btn btn-primary btn-lg btn-block" title="checkout"
-                               href="checkout.html" style="margin-bottom:20px"> Proceed to checkout &nbsp; <i
-                                    class="fa fa-arrow-right"></i> </a>
+        <div class="container">
+            <div class="row  pad-bottom">
+                <div class="col-md-4 foot">
+                    <h4><strong>ABOUT US</strong></h4>
 
+                    <div class="sidebar-box">
+                        <p>
+                            Renowned for supplying spectacular flowers throughout San Francisco and the Bay Area. Andrei
+                            and
+                            Lisa Krylov bring over fifteen years of experience to the Not Just Flowers Store and Design
+                            Studio.
+                            Not Just Flowers has built a strong reputation for consistently providing unique, perfectly
+                            tailored
+                            bouquets, utilizing the best seasonal fresh flowers and foliage. Have grown -up in England
+                            and
+                            Russia this husband and wife team have a strong European style, by mixing individual
+                            elements
+                            with a
+                            strong awareness of commercial and seasonal trends.
+                        </p>
 
-                        </div>
+                        <p class="read-more"><a href="#" class="button" id="read-more-button">Read More</a></p>
                     </div>
                 </div>
-            </div>
-            <!-- End popular -->
+                <div class="col-md-4 foot">
+                    <h4><strong>SOCIAL LINKS</strong></h4>
 
-        </div>
-        <div style="clear:both"></div>
-
-    </div>
-    <!-- /.main-container -->
-
-    <div class="gap"></div>
-
-
-</div>
-<section id="footer-sec">
-
-    <div class="container">
-        <div class="row  pad-bottom">
-            <div class="col-md-4 foot">
-                <h4><strong>ABOUT US</strong></h4>
-
-                <div class="sidebar-box">
                     <p>
-                        Renowned for supplying spectacular flowers throughout San Francisco and the Bay Area. Andrei and
-                        Lisa Krylov bring over fifteen years of experience to the Not Just Flowers Store and Design
-                        Studio.
-                        Not Just Flowers has built a strong reputation for consistently providing unique, perfectly
-                        tailored
-                        bouquets, utilizing the best seasonal fresh flowers and foliage. Have grown -up in England and
-                        Russia this husband and wife team have a strong European style, by mixing individual elements
-                        with a
-                        strong awareness of commercial and seasonal trends.
+                        <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                        <a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
                     </p>
+                </div>
+                <div class="col-md-4 foot">
+                    <h4><strong>OUR LOCATION</strong></h4>
+                    <address>
+                        4109 18th Street,
+                        San Francisco, <br>
+                        CA 94114<br>
+                        (between Castro St. & Collingwood St.)
 
-                    <p class="read-more"><a href="#" class="button" id="read-more-button">Read More</a></p>
+                    </address>
+                    <a href="tel:+4158643134"> <i class="glyphicon glyphicon-phone-alt "></i> Give us a call!</a>
                 </div>
             </div>
-            <div class="col-md-4 foot">
-                <h4><strong>SOCIAL LINKS</strong></h4>
-
-                <p>
-                    <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
-                    <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
-                    <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
-                    <a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
-                </p>
-            </div>
-            <div class="col-md-4 foot">
-                <h4><strong>OUR LOCATION</strong></h4>
-                <address>
-                    4109 18th Street,
-                    San Francisco, <br>
-                    CA 94114<br>
-                    (between Castro St. & Collingwood St.)
-
-                </address>
-                <a href="tel:+4158643134"> <i class="glyphicon glyphicon-phone-alt "></i> Give us a call!</a>
-            </div>
+            <ul>
+                <li style=" text-align:center; margin: 20px" class="copyright">Copyright ©
+                    2015 Not Just Flowers | notjustflowerscastro.com | 4109 18th Street, San Francisco, CA 94114 | (415)
+                    864-3134 | <a style="color: #2c3e50" href="terms.htm"
+                                  onclick="window.open(this.href,'new_window','height=700,width=800,resizable=yes,scrollbars=yes');return false;"
+                                  class="gray" style="text-decoration: none;">Terms</a></li>
+            </ul>
         </div>
-        <ul>
-            <li style=" text-align:center; margin: 20px" class="copyright">Copyright ©
-                2015 Not Just Flowers | notjustflowerscastro.com | 4109 18th Street, San Francisco, CA 94114 | (415)
-                864-3134 | <a style="color: #2c3e50" href="terms.htm"
-                              onclick="window.open(this.href,'new_window','height=700,width=800,resizable=yes,scrollbars=yes');return false;"
-                              class="gray" style="text-decoration: none;">Terms</a></li>
-        </ul>
-    </div>
-</section>
+    </section>
 </div>
 <!--/.FOOTER END-->
 <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->

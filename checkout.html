@@ -393,150 +393,149 @@
 <!-- /BILLING -->
 <!-- DELIVERY -->
 <div id="shipping" class="w100 clearfix">
-    <div class="row userInfo">
-        <div class="col-lg-12">
-            <h2 class="block-title-2"> Choose your delivery method </h2>
-        </div>
-        <div class="col-xs-12 col-sm-12">
-            <div class="w100 row">
-                <div class="form-group col-lg-12 col-sm-12 col-md-12 -col-xs-12">
-                    <table style="width:100%" class="table-bordered table tablelook2">
-                        <tbody>
-                        <tr>
-                            <td> Method</td>
-                            <td>Information</td>
-                            <td>Price</td>
-                        </tr>
-                        <tr>
-                            <td><label class="radio">
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                <i class="fa fa-home fa-2x"></i> </label></td>
-                            <td> Pick up in-store</td>
-                            <td>Free</td>
-                        </tr>
-                        <tr>
-                            <td><label class="radio">
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                <i class="fa fa-truck fa-2x"></i> </label></td>
-                            <td>Delivery (Same day delivery cutoff time is 2:00pm)</td>
-                            <td>CA sales tax of 8.5% will be added to your total.</td>
-                        </tr>
-                        </tbody>
-                    </table>
+<div class="row userInfo">
+    <div class="col-lg-12">
+        <h2 class="block-title-2"> Choose your delivery method </h2>
+    </div>
+    <div class="col-xs-12 col-sm-12">
+        <div class="w100 row">
+            <div class="form-group col-lg-12 col-sm-12 col-md-12 -col-xs-12">
+                <table style="width:100%" class="table-bordered table tablelook2">
+                    <tbody>
+                    <tr>
+                        <td> Method</td>
+                        <td>Information</td>
+                        <td>Price</td>
+                    </tr>
+                    <tr>
+                        <td><label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            <i class="fa fa-home fa-2x"></i> </label></td>
+                        <td> Pick up in-store</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            <i class="fa fa-truck fa-2x"></i> </label></td>
+                        <td>Delivery (Same day delivery cutoff time is 2:00pm)</td>
+                        <td>CA sales tax of 8.5% will be added to your total.</td>
+                    </tr>
+                    </tbody>
+                </table>
 
-        <div class="form-group">
-            <label for="InputAdditionalInformation">Gift Message (optional) </label>
-            <textarea rows="4" cols="26" name="gift_message" class="form-control" id="g_message"></textarea>
-        </div>
+                <div class="form-group">
+                    <label for="InputAdditionalInformation">Gift Message (optional) </label>
+                    <textarea rows="4" cols="26" name="gift_message" class="form-control" id="g_message"></textarea>
                 </div>
             </div>
+        </div>
 
-            <!--/row-->
-            <!-- /DELIVERY -->
-            <!-- PAYMENT -->
-            <div id="payment" class="w100 clearfix">
-                <div class="row userInfo">
-                    <div class="col-lg-12">
-                        <h2 class="block-title-2"> Credit Card Information </h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-12">
-                        <div class="paymentBox">
-                            <div class="panel-group paymentMethod">
-                                <div style="visibility: hidden" class="panel panel-default">
-                                    <div id="collapseOne">
-                                    </div>
+        <!--/row-->
+        <!-- /DELIVERY -->
+        <!-- PAYMENT -->
+        <div id="payment" class="w100 clearfix">
+            <div class="row userInfo">
+                <div class="col-lg-12">
+                    <h2 class="block-title-2"> Credit Card Information </h2>
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <div class="paymentBox">
+                        <div class="panel-group paymentMethod">
+                            <div style="visibility: hidden" class="panel panel-default">
+                                <div id="collapseOne">
                                 </div>
+                            </div>
 
-                                <div class="panel panel-default">
-                                    <div id="collapseThree">
-                                        <div class="panel-body">
-                                            <br>
+                            <div class="panel panel-default">
+                                <div id="collapseThree">
+                                    <div class="panel-body">
+                                        <br>
 
-                                            <div class="panel open">
-                                                <div class="creditCard">
-                                                    <div class="cartBottomInnerRight paymentCard">
-                                                    </div>
-                                                    <label>Credit card type: <select class="select w173"
-                                                                                     name="cc_type">
-                                                        <option label="Visa" value="Visa">Visa</option>
-                                                        <option label="Master Card" value="Master Card">Master
-                                                            Card
-                                                        </option>
-                                                        <option label="American Express"
-                                                                value="American Express">American Express
-                                                        </option>
+                                        <div class="panel open">
+                                            <div class="creditCard">
+                                                <div class="cartBottomInnerRight paymentCard">
+                                                </div>
+                                                <label>Credit card type: <select class="select w173"
+                                                                                 name="cc_type">
+                                                    <option label="Visa" value="Visa">Visa</option>
+                                                    <option label="Master Card" value="Master Card">Master
+                                                        Card
+                                                    </option>
+                                                    <option label="American Express"
+                                                            value="American Express">American Express
+                                                    </option>
 
-                                                    </select> </label>
+                                                </select> </label>
 
-                                                    <div class="paymentInput">
-                                                        <label for="CardNumber">Credit Card Number:
-                                                            <input id="CardNumber" type="text" name="Number"> *
-                                                        </label>
-                                                    </div>
-                                                    <!--paymentInput-->
-                                                    <div class="paymentInput">
-                                                        <label for="Cardname">Name as it appears on Credit Card:
-                                                            <input type="text" name="Cardname" id="Cardname"> *
-                                                        </label>
-                                                    </div>
-                                                    <!--paymentInput-->
-                                                    <div class="paymentInput">
-                                                        <div class="form-group">
-                                                            <label>Expiration date: </label>
-                                                            <br>
+                                                <div class="paymentInput">
+                                                    <label for="CardNumber">Credit Card Number:
+                                                        <input id="CardNumber" type="text" name="Number"> *
+                                                    </label>
+                                                </div>
+                                                <!--paymentInput-->
+                                                <div class="paymentInput">
+                                                    <label for="Cardname">Name as it appears on Credit Card:
+                                                        <input type="text" name="Cardname" id="Cardname"> *
+                                                    </label>
+                                                </div>
+                                                <!--paymentInput-->
+                                                <div class="paymentInput">
+                                                    <div class="form-group">
+                                                        <label>Expiration date: </label>
+                                                        <br>
 
-                                                            <div class="col-lg-4 col-md-4 col-sm-4 no-margin-left no-padding">
-                                                                <select required aria-required="true"
-                                                                        name="expire">
-                                                                    <option value="">Month</option>
-                                                                    <option value="1">01 - January</option>
-                                                                    <option value="2">02 - February</option>
-                                                                    <option value="3">03 - March</option>
-                                                                    <option value="4">04 - April</option>
-                                                                    <option value="5">05 - May</option>
-                                                                    <option value="6">06 - June</option>
-                                                                    <option value="7">07 - July</option>
-                                                                    <option value="8">08 - August</option>
-                                                                    <option value="9">09 - September</option>
-                                                                    <option value="10">10 - October</option>
-                                                                    <option value="11">11 - November</option>
-                                                                    <option value="12">12 - December</option>
-                                                                </select>
-                                                                <select required aria-required="true"
-                                                                        name="year">
-                                                                    <option value="">Year</option>
-                                                                    <option value="2013">2013</option>
-                                                                    <option value="2014">2014</option>
-                                                                    <option value="2015">2015</option>
-                                                                    <option value="2016">2016</option>
-                                                                    <option value="2017">2017</option>
-                                                                    <option value="2018">2018</option>
-                                                                    <option value="2019">2019</option>
-                                                                    <option value="2020">2020</option>
-                                                                    <option value="2021">2021</option>
-                                                                    <option value="2022">2022</option>
-                                                                    <option value="2023">2023</option>
-                                                                </select>
-                                                            </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 no-margin-left no-padding">
+                                                            <select required aria-required="true"
+                                                                    name="expire">
+                                                                <option value="">Month</option>
+                                                                <option value="1">01 - January</option>
+                                                                <option value="2">02 - February</option>
+                                                                <option value="3">03 - March</option>
+                                                                <option value="4">04 - April</option>
+                                                                <option value="5">05 - May</option>
+                                                                <option value="6">06 - June</option>
+                                                                <option value="7">07 - July</option>
+                                                                <option value="8">08 - August</option>
+                                                                <option value="9">09 - September</option>
+                                                                <option value="10">10 - October</option>
+                                                                <option value="11">11 - November</option>
+                                                                <option value="12">12 - December</option>
+                                                            </select>
+                                                            <select required aria-required="true"
+                                                                    name="year">
+                                                                <option value="">Year</option>
+                                                                <option value="2013">2013</option>
+                                                                <option value="2014">2014</option>
+                                                                <option value="2015">2015</option>
+                                                                <option value="2016">2016</option>
+                                                                <option value="2017">2017</option>
+                                                                <option value="2018">2018</option>
+                                                                <option value="2019">2019</option>
+                                                                <option value="2020">2020</option>
+                                                                <option value="2021">2021</option>
+                                                                <option value="2022">2022</option>
+                                                                <option value="2023">2023</option>
+                                                            </select>
                                                         </div>
                                                     </div>
-                                                    <br>
-                                                    <!--paymentInput-->
-
-                                                    <div style="clear:both"></div>
-                                                    <div class="paymentInput clearfix">
-                                                        <label for="VerificationCode">Verification Code
-
-                                                            <input type="text" id="VerificationCode"
-                                                                   name="VerificationCode" style="width:90px;"> *
-                                                        </label>
-                                                        <br>
-                                                    </div>
-                                                    <!--paymentInput-->
-
                                                 </div>
-                                                <!--creditCard-->
+                                                <br>
+                                                <!--paymentInput-->
+
+                                                <div style="clear:both"></div>
+                                                <div class="paymentInput clearfix">
+                                                    <label for="VerificationCode">Verification Code
+
+                                                        <input type="text" id="VerificationCode"
+                                                               name="VerificationCode" style="width:90px;"> *
+                                                    </label>
+                                                    <br>
+                                                </div>
+                                                <!--paymentInput-->
+
                                             </div>
+                                            <!--creditCard-->
                                         </div>
                                     </div>
                                 </div>
@@ -547,56 +546,57 @@
             </div>
         </div>
     </div>
-    <!--/row-->
-    <!--/PAYMENT-->
-    <!--Complete Order-->
-    <div id="order" class="w100 clearfix">
+</div>
+<!--/row-->
+<!--/PAYMENT-->
+<!--Complete Order-->
+<div id="order" class="w100 clearfix">
 
 
-        <div class="row userInfo">
+    <div class="row userInfo">
 
-            <div class="col-lg-12">
-                <h2 class="block-title-2"> Review Order </h2>
-            </div>
+        <div class="col-lg-12">
+            <h2 class="block-title-2"> Review Order </h2>
+        </div>
 
 
-            <div class="col-xs-12 col-sm-12">
-                <div class="cartContent w100 checkoutReview ">
-                    <table class="cartTable table-responsive" style="width:100%">
-                        <tbody>
-                        <tr class="CartProduct cartTableHeader">
-                            <th style="width:15%"> Product</th>
-                            <th class="checkoutReviewTdDetails">Details</th>
-                            <th style="width:10%">Unit Price</th>
-                            <th class="hidden-xs" style="width:5%">QNT</th>
-                            <th class="hidden-xs" style="width:10%">Discount</th>
-                            <th style="width:15%">Total</th>
-                        </tr>
-                        <tr class="CartProduct">
-                            <td class="CartProductThumb">
-                                <div><a href="#"><img src="images/product/..."></a>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="CartDescription">
-                                    <h4><a href="#"></a></h4>
-                                    <span class="size"></span>
+        <div class="col-xs-12 col-sm-12">
+            <div class="cartContent w100 checkoutReview ">
+                <table class="cartTable table-responsive" style="width:100%">
+                    <tbody>
+                    <tr class="CartProduct cartTableHeader">
+                        <th style="width:15%"> Product</th>
+                        <th class="checkoutReviewTdDetails">Details</th>
+                        <th style="width:10%">Unit Price</th>
+                        <th class="hidden-xs" style="width:5%">QNT</th>
+                        <th class="hidden-xs" style="width:10%">Discount</th>
+                        <th style="width:15%">Total</th>
+                    </tr>
+                    <tr class="CartProduct">
+                        <td class="CartProductThumb">
+                            <div><a href="#"><img src="images/product/..."></a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="CartDescription">
+                                <h4><a href="#"></a></h4>
+                                <span class="size"></span>
 
-                                </div>
-                            </td>
-                            <td class="delete">
-                                <div class="price "></div>
-                            </td>
-                            <td class="hidden-xs"></td>
-                            <td class="hidden-xs"></td>
-                            <td class="price"></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+                            </div>
+                        </td>
+                        <td class="delete">
+                            <div class="price "></div>
+                        </td>
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs"></td>
+                        <td class="price"></td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
+</div>
 </div>
 </div>
 <!--Complete Order-->
@@ -620,24 +620,28 @@
         <table id="cart-summary" class="std table">
             <tbody>
             <tr>
-                <td>Total products</td>
-                <td class="price"></td>
+                <td>Total products: (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</td>
             </tr>
             <tr style="">
                 <td>Shipping</td>
-                <td class="price"><span class="success"></span></td>
+                <td><span id="simpleCart_shipping" class="simpleCart_shipping"></span> </td>
             </tr>
             <tr class="cart-total-price ">
                 <td>Total (tax excl.)</td>
-                <td class="price"></td>
+                <td><span id="simpleCart_total" class="simpleCart_total"></span></td>
             </tr>
             <tr>
-                <td>Total tax</td>
-                <td class="price" id="total-tax"></td>
+                <td>Total tax:</td>
+                <td><span id="simpleCart_tax" class="simpleCart_tax"></span> </td>
             </tr>
             <tr>
                 <td> Total</td>
-                <td class=" site-color" id="total-price"></td>
+                <td class=" site-color" id="total-price"><span class="simpleCart_total"></span></td>
+
+            </tr>
+            <tr>
+                <td><a href="javascript:;" class="simpleCart_empty"><span class="glyphicon glyphicon-trash"></span>
+                    empty cart</a></td>
             </tr>
             </tbody>
             <tbody>
@@ -659,7 +663,8 @@
                 "look and feel" of our arrangements featured will remain the same, with our designers paying careful
                 attention to overall shape, size, style, and color combinations.
                 For example, we will not substitute red roses for white orchids.
-                <br><br>In order to confirm the availability of a particular flower please call our store directly at (415)
+                <br><br>In order to confirm the availability of a particular flower please call our store directly at
+                (415)
                 864-3134. Available for delivery seven days a week.
             </tr>
             </tbody>
